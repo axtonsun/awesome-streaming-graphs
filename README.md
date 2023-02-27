@@ -7,6 +7,14 @@ Must-read papers on streaming graph
 <tr><td colspan="2"><a href="#keynote">1. Keynote</a></td></tr> 
 <tr><td colspan="2"><a href="#survey-papers">2. Survey</a></td></tr> 
 <tr><td colspan="2"><a href="#system">3. System</a></td></tr> 
+<tr><td colspan="2"><a href="#exact-algorithms">4. Exact Algorithms</a></td></tr>
+<tr>
+    <td>&ensp;<a href="#subgraph-matching">4.1 Subgraph Matching</a></td>
+</tr>
+<tr><td colspan="2"><a href="#approximation-algorithms">5. Approximation Algorithms</a></td></tr>
+<tr>
+    <td>&ensp;<a href="#triangle-count">5.1 Triangle Count</a></td>
+</tr>
 </table>
 
 ## [Keynote](#content)
@@ -36,7 +44,35 @@ Must-read papers on streaming graph
 
    *Guanyu Feng, Zixuan Ma, Daixuan Li, Shengqi Chen, Xiaowei Zhu, Wentao Han, Wenguang Chen*
    
-1. **GraphOne: A Data Store for Real-time Analytics on Evolving Graphs.**  FAST 2019: 249-263 [[paper]](https://www.usenix.org/conference/fast19/presentation/kumar) [[slides]](https://www.usenix.org/sites/default/files/conference/protected-files/fast19_slides_kumar.pdf) [[video]](https://www.youtube.com/watch?v=Pqps3bz1LE0) 
+1. **GraphOne: A Data Store for Real-time Analytics on Evolving Graphs.** FAST 2019: 249-263 [[paper]](https://www.usenix.org/conference/fast19/presentation/kumar) [[slides]](https://www.usenix.org/sites/default/files/conference/protected-files/fast19_slides_kumar.pdf) [[video]](https://www.youtube.com/watch?v=Pqps3bz1LE0) 
 
    *Pradeep Kumar, H. Howie Huang.* 
+
+## [Exact Algorithms](#content) 
+
+### [Subgraph Matching](#content) 
+
+1. **Time Constrained Continuous Subgraph Search Over Streaming Graphs.** ICDE 2019: 1082-1093 [[paper]](https://ieeexplore.ieee.org/document/8731446)
+
+   *Youhuan Li, Lei Zou, M. Tamer Özsu, Dongyan Zhao.* 
    
+1. **A Selectivity based approach to Continuous Pattern Detection in Streaming Graphs.** EDBT 2015: 157-168 [[paper]](https://openproceedings.org/2015/conf/edbt/paper-307.pdf) [[slides]](https://sutanay.github.io/publications/StreamWorks_BlueHat.pdf)
+
+   *Sutanay Choudhury, Lawrence B. Holder, George Chin Jr., Khushbu Agarwal, John Feo.* 
+
+## [Approximation Algorithms](#content)
+
+### [Triangle Count](#content) 
+
+1. **Sliding Window-based Approximate Triangle Counting over Streaming Graphs with Duplicate Edges.** SIGMOD Conference 2021: 645-657 [[paper]](https://dl.acm.org/doi/10.1145/3448016.3452800)
+
+   *Xiangyang Gou, Lei Zou.* 
+   
+1. **Memory-Efficient and Accurate Sampling for Counting Local Triangles in Graph Streams: From Simple to Multigraphs.** ACM Trans. Knowl. Discov. Data 12(1): 4:1-4:28 (2018) [[paper]](https://dl.acm.org/doi/10.1145/3022186)
+
+   *Yongsub Lim, Minsoo Jung, U Kang.* 
+   
+1. **TRIÈST: Counting Local and Global Triangles in Fully-Dynamic Streams with Fixed Memory Size..** KDD 2016: 825-834 [[paper]](https://dl.acm.org/doi/10.1145/2939672.2939771)
+
+   *Lorenzo De Stefani, Alessandro Epasto, Matteo Riondato, Eli Upfal.* 
+ 
