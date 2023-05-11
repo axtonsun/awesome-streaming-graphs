@@ -7,13 +7,14 @@ Must-read papers on streaming graph
 <tr><td colspan="2"><a href="#keynote">1. Keynote</a></td></tr> 
 <tr><td colspan="2"><a href="#survey-papers">2. Survey</a></td></tr> 
 <tr><td colspan="2"><a href="#system">3. System</a></td></tr> 
-<tr><td colspan="2"><a href="#exact-algorithms">4. Exact Algorithms</a></td></tr>
+<tr><td colspan="2"><a href="#graph-stream-summarization">4. Graph Stream Summarization</a></td></tr> 
+<tr><td colspan="2"><a href="#exact-algorithms">5. Exact Algorithms</a></td></tr>
 <tr>
-    <td>&ensp;<a href="#subgraph-matching">4.1 Subgraph Matching</a></td>
+    <td>&ensp;<a href="#subgraph-matching">5.1 Subgraph Matching</a></td>
 </tr>
-<tr><td colspan="2"><a href="#approximation-algorithms">5. Approximation Algorithms</a></td></tr>
+<tr><td colspan="2"><a href="#approximation-algorithms">6. Approximation Algorithms</a></td></tr>
 <tr>
-    <td>&ensp;<a href="#triangle-count">5.1 Triangle Count</a></td>
+    <td>&ensp;<a href="#triangle-count">6.1 Triangle Count</a></td>
 </tr>
 </table>
 
@@ -47,6 +48,36 @@ Must-read papers on streaming graph
 1. **GraphOne: A Data Store for Real-time Analytics on Evolving Graphs.** FAST 2019: 249-263 [[paper]](https://www.usenix.org/conference/fast19/presentation/kumar) [[slides]](https://www.usenix.org/sites/default/files/conference/protected-files/fast19_slides_kumar.pdf) [[video]](https://www.youtube.com/watch?v=Pqps3bz1LE0) 
 
    *Pradeep Kumar, H. Howie Huang.* 
+
+## [Graph Stream Summarization](#content)
+
+1. **Auxo: A Scalable and Efficient Graph Stream Summarization Structure.** Proc. VLDB Endow. 16(6): 1386-1398 (2023) [[paper]](https://www.vldb.org/pvldb/vol16/p1386-chen.pdf)
+
+   *Zhiguo Jiang, Hanhua Chen, Hai Jin.* 
+
+1. **Horae: A Graph Stream Summarization Structure for Efficient Temporal Range Query.** ICDE 2022: 2792-2804 [[paper]](https://doi.org/10.1109/ICDE53745.2022.00254)
+
+   *Ming Chen, Renxiang Zhou, Hanhua Chen, Jiang Xiao, Hai Jin, Bo Li.* 
+   
+1. **Scube: Efficient Summarization for Skewed Graph Streams.** ICDCS 2022: 100-110 [[paper]](https://doi.org/10.1109/ICDCS54860.2022.00019)
+
+   *Ming Chen, Renxiang Zhou, Hanhua Chen, Hai Jin.* 
+
+1. **Graph Stream Sketch: Summarizing Graph Streams With High Speed and Accuracy.** IEEE Trans. Knowl. Data Eng. 35(6): 5901-5914 (2023) [[paper]](https://doi.org/10.1109/TKDE.2022.3174570)
+
+   *Xiangyang Gou, Lei Zou, Chenxingyu Zhao, Tong Yang.* 
+
+1. **Fast and Accurate Graph Stream Summarization.** ICDE 2019: 1118-1129 [[paper]](https://doi.org/10.1109/ICDE.2019.00103)
+
+   *Xiangyang Gou, Lei Zou, Chenxingyu Zhao, Tong Yang.* 
+
+1. **Incremental Lossless Graph Summarization.**  KDD 2020: 317-327 [[paper]](https://dl.acm.org/doi/10.1145/3394486.3403074) [[slides]](https://www.slideshare.net/ssuserd6bbc0/incremental-lossless-graph-summarization-kdd-2020) [[video]](https://youtu.be/FHVx642GoaI) 
+
+   *Jihoon Ko, Yunbum Kook, Kijung Shin.* 
+
+1. **Graph Stream Summarization: From Big Bang to Big Crunch.** SIGMOD Conference 2016: 1481-1496 [[paper]](https://dl.acm.org/doi/10.1145/2882903.2915223) [[slides]](https://prezi.com/wj5kw9wbmr8o/tcm/)
+
+   *Nan Tang, Qing Chen, Prasenjit Mitra.* 
 
 ## [Exact Algorithms](#content) 
 
