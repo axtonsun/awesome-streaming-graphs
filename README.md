@@ -11,10 +11,12 @@ Must-read papers on streaming graph
 <tr><td colspan="2"><a href="#exact-algorithms">5. Exact Algorithms</a></td></tr>
 <tr>
     <td>&ensp;<a href="#subgraph-matching">5.1 Subgraph Matching</a></td>
+    <td>&ensp;<a href="#regular-path-query">5.2 Regular Path Query</a></td>
 </tr>
 <tr><td colspan="2"><a href="#approximation-algorithms">6. Approximation Algorithms</a></td></tr>
 <tr>
     <td>&ensp;<a href="#triangle-count">6.1 Triangle Count</a></td>
+    <td>&ensp;<a href="#butterfly-count">6.2 Butterfly Count</a></td>
 </tr>
 </table>
 
@@ -91,6 +93,20 @@ Must-read papers on streaming graph
 
    *Sutanay Choudhury, Lawrence B. Holder, George Chin Jr., Khushbu Agarwal, John Feo.* 
 
+### [Regular Path Query](#content) 
+
+1. **LM-SRPQ: Efficiently Answering Regular Path Query in Streaming Graphs.** Proc. VLDB Endow. 17(5): 1047-1059 [[paper]](https://www.vldb.org/pvldb/vol17/p1047-zou.pdf) [[code]](https://github.com/StreamingTriangle/LM-SRPQ)
+
+   *Xiangyang Gou, Xinyi Ye, Lei Zou, Jeffrey Xu Yu.* 
+
+1. **Evaluating complex queries on streaming graphs.** ICDE 2022: 272-285 [[paper]](https://ieeexplore.ieee.org/document/9835463) [[code]](https://github.com/dsg-uwaterloo/s-graffito) [[slides]](https://cs.uwaterloo.ca/~apacaci/papers/icde_longtalk_20220423.pdf) [[video]](https://www.youtube.com/watch?v=r1t1xZXrvzM)
+
+   *Anil Pacaci, Angela Bonifati, M. Tamer Özsu.* 
+
+1. **Regular Path Query Evaluation on Streaming Graphs.** SIGMOD Conference 2020: 1415-1430 [[paper]](https://dl.acm.org/doi/10.1145/3318464.3389733) [[slides]](https://cs.uwaterloo.ca/~apacaci/papers/sigmod2020.pdf) [[video]](https://dl.acm.org/doi/10.1145/3318464.3389733#sec-supp)
+
+   *Anil Pacaci, Angela Bonifati, M. Tamer Özsu.* 
+
 ## [Approximation Algorithms](#content)
 
 ### [Triangle Count](#content) 
@@ -107,3 +123,21 @@ Must-read papers on streaming graph
 
    *Lorenzo De Stefani, Alessandro Epasto, Matteo Riondato, Eli Upfal.* 
  
+### [Butterfly Count](#content)
+
+1. **Counting Butterflies in Fully Dynamic Bipartite Graph Streams.** ICDE 2024 [[paper]](https://arxiv.org/abs/2312.03435)
+
+   *Serafeim Papadias, Zoi Kaoudi, Varun Pandey, Jorge-Arnulfo Quiané-Ruiz, Volker Markl.* 
+
+1. **Approximately Counting Butterflies in Large Bipartite Graph Streams.** IEEE Trans. Knowl. Data Eng. 34(12): 5621-5635 (2022) [[paper]](https://ieeexplore.ieee.org/document/9366975)
+
+   *Rundong Li, Pinghui Wang, Peng Jia, Xiangliang Zhang, Junzhou Zhao, Jing Tao, Ye Yuan, Xiaohong Guan.* 
+
+
+1. **sGrapp: Butterfly Approximation in Streaming Graphs.** ACM Trans. Knowl. Discov. Data 16(4): 76:1-76:43 (2022) [[paper]](https://dl.acm.org/doi/10.1145/3495011) [[code]](https://github.com/dsg-uwaterloo/s-graffito/blob/master/files/sGrapp_artifacts.zip)
+
+   *Aida Sheshbolouki, M. Tamer Özsu.* 
+
+1. **FLEET: Butterfly Estimation from a Bipartite Graph Stream.** CIKM 2019: 1201-1210 [[paper]](https://dl.acm.org/doi/10.1145/3357384.3357983) [[code]](https://github.com/beginner1010/fleet)
+
+   *Seyed-Vahid Sanei-Mehri, Yu Zhang, Ahmet Erdem Sariyüce, Srikanta Tirthapura.* 
