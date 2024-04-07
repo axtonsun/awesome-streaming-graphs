@@ -1,4 +1,6 @@
 # awesome-streaming-graphs
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+
 Must-read papers on streaming graph
 
 ## [Content](#content)
@@ -85,13 +87,61 @@ Must-read papers on streaming graph
 
 ### [Subgraph Matching](#content) 
 
-1. **Time Constrained Continuous Subgraph Search Over Streaming Graphs.** ICDE 2019: 1082-1093 [[paper]](https://ieeexplore.ieee.org/document/8731446)
+1. **Fast Continuous Subgraph Matching over Streaming Graphs via Backtracking Reduction.** Proc. ACM Manag. Data 1(1): 15:1-15:26 (2023) [[paper]](https://dl.acm.org/doi/10.1145/3588695) [[code]](https://github.com/JackChuengQAQ/CaLiG) [[video]](https://dl.acm.org/action/downloadSupplement?doi=10.1145/3588695&file=meeting_09.mp4)
+
+   *Rongjian Yang, Zhijie Zhang, Weiguo Zheng, Jeffrey Xu Yu.*
+
+1. **An In-Depth Study of Continuous Subgraph Matching.** Proc. VLDB Endow. 15(7): 1403-1416 (2022) [[paper]](https://www.vldb.org/pvldb/vol15/p1403-sun.pdf) [[code]](https://github.com/RapidsAtHKUST/ContinuousSubgraphMatching)
+
+   *Xibo Sun, Shixuan Sun, Qiong Luo, Bingsheng He.*
+
+1. **RapidFlow: An Efficient Approach to Continuous Subgraph Matching.** Proc. VLDB Endow. 15(11): 2415-2427 (2022) [[paper]](https://www.vldb.org/pvldb/vol15/p2415-sun.pdf) [[code]](https://github.com/shixuansun/RapidFlow)
+
+   *Shixuan Sun, Xibo Sun, Bingsheng He, Qiong Luo.*
+
+1. **RapidMatch: A Holistic Approach to Subgraph Query Processing.** Proc. VLDB Endow. 14(2): 176-188 (2020) [[paper]](https://www.vldb.org/pvldb/vol14/p176-sun.pdf) [[code]](https://github.com/RapidsAtHKUST/RapidMatch)
+
+   *Shixuan Sun, Xibo Sun, Yulin Che, Qiong Luo, Bingsheng He.*
+
+1. **Symmetric Continuous Subgraph Matching with Bidirectional Dynamic Programming.** Proc. VLDB Endow. 14(8): 1298-1310 (2021) [[paper]](https://www.vldb.org/pvldb/vol14/p1298-han.pdf) [[code]](https://github.com/SNUCSE-CTA/SymBi)
+
+   *Seunghwan Min, Sung Gwan Park, Kunsoo Park, Dora Giammarresi, Giuseppe F. Italiano, Wook-Shin Han.* 
+
+1. **Space-Efficient Subgraph Search Over Streaming Graph With Timing Order Constraint.**  IEEE Trans. Knowl. Data Eng. 34(9): 4453-4467 (2022) [[paper]](https://ieeexplore.ieee.org/document/9248627)
 
    *Youhuan Li, Lei Zou, M. Tamer Özsu, Dongyan Zhao.* 
+
+1. **Time Constrained Continuous Subgraph Search Over Streaming Graphs.** ICDE 2019: 1082-1093 [[paper]](https://ieeexplore.ieee.org/document/8731446) [[code]](https://github.com/pkumod/timingsubg)
+
+   *Youhuan Li, Lei Zou, M. Tamer Özsu, Dongyan Zhao.*
+
+1. **TurboFlux: A Fast Continuous Subgraph Matching System for Streaming Graph Data.** SIGMOD Conference 2018: 411-426 [[paper]](https://dl.acm.org/doi/10.1145/3183713.3196917)
+
+   *Kyoungmin Kim, In Seo, Wook-Shin Han, Jeong-Hoon Lee, Sungpack Hong, Hassan Chafi, Hyungyu Shin, Geonhwa Jeong.*
+
+1. **General dynamic Yannakakis: conjunctive queries with theta joins under updates.** VLDB J. 29(2-3): 619-653 (2020) [[paper]](https://link.springer.com/article/10.1007/s00778-019-00590-9)
+
+   *Muhammad Idris, Martín Ugarte, Stijn Vansummeren, Hannes Voigt, Wolfgang Lehner.*
+
+1. **The Dynamic Yannakakis Algorithm: Compact and Efficient Query Processing Under Updates.** SIGMOD Conference 2017: 1259-1274 [[paper]](https://dl.acm.org/doi/10.1145/3035918.3064027)
+
+   *Muhammad Idris, Martín Ugarte, Stijn Vansummeren.*
+
+1. **Graphflow: An active graph database.** SIGMOD Conference 2017: 1695-1698 [[paper]](https://dl.acm.org/doi/10.1145/3035918.3056445)
+
+   *Chathura Kankanamge, Siddhartha Sahu, Amine Mhedhbi, Jeremy Chen, Semih Salihoglu.* 
    
 1. **A Selectivity based approach to Continuous Pattern Detection in Streaming Graphs.** EDBT 2015: 157-168 [[paper]](https://openproceedings.org/2015/conf/edbt/paper-307.pdf) [[slides]](https://sutanay.github.io/publications/StreamWorks_BlueHat.pdf)
 
-   *Sutanay Choudhury, Lawrence B. Holder, George Chin Jr., Khushbu Agarwal, John Feo.* 
+   *Sutanay Choudhury, Lawrence B. Holder, George Chin Jr., Khushbu Agarwal, John Feo.*
+
+1. **Incremental graph pattern matching.** ACM Trans. Database Syst. 38(3): 18 (2013) [[paper]](https://dl.acm.org/doi/10.1145/2489791)
+
+   *Wenfei Fan, Xin Wang, Yinghui Wu.*
+
+1. **Incremental graph pattern matching.** SIGMOD Conference 2011: 925-936 [[paper]](https://dl.acm.org/doi/10.1145/1989323.1989420)
+
+   *Wenfei Fan, Jianzhong Li, Jizhou Luo, Zijing Tan, Xin Wang, Yinghui Wu.* 
 
 ### [Regular Path Query](#content) 
 
