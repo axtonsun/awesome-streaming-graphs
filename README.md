@@ -145,6 +145,10 @@ Must-read papers on streaming graph
 
 ### [Regular Path Query](#content) 
 
+1. **MWP: Multi-Window Parallel Evaluation of Regular Path Queries on Streaming Graphs.** Proc. ACM Manag. Data 2(1): 5:1-5:26 (2024) [[paper]](https://dl.acm.org/doi/10.1145/3639260)
+
+   *Siyuan Zhang, Zhenying He, Yinan Jing, Kai Zhang, X. Sean Wang.* 
+
 1. **LM-SRPQ: Efficiently Answering Regular Path Query in Streaming Graphs.** Proc. VLDB Endow. 17(5): 1047-1059 [[paper]](https://www.vldb.org/pvldb/vol17/p1047-zou.pdf) [[code]](https://github.com/StreamingTriangle/LM-SRPQ)
 
    *Xiangyang Gou, Xinyi Ye, Lei Zou, Jeffrey Xu Yu.* 
