@@ -87,6 +87,22 @@ Must-read papers on streaming graph
 
 ### [Subgraph Matching](#content) 
 
+1. **CSM-TopK: Continuous Subgraph Matching with TopK Density Constraints.** ICDE 2024: 3084-3097 [[paper]](https://doi.org/10.1109/ICDE60146.2024.00239) [[code]](https://github.com/chuchugao2/CSMTopk)
+
+   *Chuchu Gao, Youhuan Li, Zhibang Yang, Xu Zhou.*
+
+1. **Efficient Multi-Query Oriented Continuous Subgraph Matching.** ICDE 2024: 3230-3243 [[paper]](https://doi.org/10.1109/ICDE60146.2024.00250)
+
+   *Ziyi Ma, Jianye Yang, Xu Zhou, Guoqing Xiao, Jianhua Wang, Liang Yang, Kenli Li, Xuemin Lin.*
+
+1. **Time-Constrained Continuous Subgraph Matching Using Temporal Information for Filtering and Backtracking.** ICDE 2024: 3257-3269 [[paper]](https://doi.org/10.1109/ICDE60146.2024.00252)
+
+   *Seunghwan Min, Jihoon Jang, Kunsoo Park, Dora Giammarresi, Giuseppe F. Italiano, Wook-Shin Han.*
+
+1. **NewSP: A New Search Process for Continuous Subgraph Matching over Dynamic Graphs.** ICDE 2024: 3324-3337 [[paper]](https://doi.org/10.1109/ICDE60146.2024.00257)
+
+   *Ziming Li, Youhuan Li, Xinhuan Chen, Lei Zou, Yang Li, Xiaofeng Yang, Hongbo Jiang.*
+
 1. **Fast Continuous Subgraph Matching over Streaming Graphs via Backtracking Reduction.** Proc. ACM Manag. Data 1(1): 15:1-15:26 (2023) [[paper]](https://dl.acm.org/doi/10.1145/3588695) [[code]](https://github.com/JackChuengQAQ/CaLiG) [[video]](https://dl.acm.org/action/downloadSupplement?doi=10.1145/3588695&file=meeting_09.mp4)
 
    *Rongjian Yang, Zhijie Zhang, Weiguo Zheng, Jeffrey Xu Yu.*
@@ -179,7 +195,7 @@ Must-read papers on streaming graph
  
 ### [Butterfly Count](#content)
 
-1. **Counting Butterflies in Fully Dynamic Bipartite Graph Streams.** ICDE 2024 [[paper]](https://arxiv.org/abs/2312.03435)
+1. **Counting Butterflies in Fully Dynamic Bipartite Graph Streams.** ICDE 2024: 2917-2930 [[paper]](https://doi.org/10.1109/ICDE60146.2024.00226)
 
    *Serafeim Papadias, Zoi Kaoudi, Varun Pandey, Jorge-Arnulfo Quiané-Ruiz, Volker Markl.* 
 
