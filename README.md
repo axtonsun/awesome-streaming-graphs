@@ -87,6 +87,10 @@ Must-read papers on streaming graph
 
 ### [Subgraph Matching](#content) 
 
+1. **TC-Match: Fast Time-constrained Continuous Subgraph Matching.** Proc. VLDB Endow. 17(11): 2791-2804 (2024) [[paper]](https://www.vldb.org/pvldb/vol17/p2791-yang.pdf) [[code]](https://github.com/Sh-Fang/TCMatch)
+
+   *Jianye Yang, Sheng Fang, Zhaoquan Gu, Ziyi Ma, Xuemin Lin, Zhihong Tian.*
+
 1. **CSM-TopK: Continuous Subgraph Matching with TopK Density Constraints.** ICDE 2024: 3084-3097 [[paper]](https://doi.org/10.1109/ICDE60146.2024.00239) [[code]](https://github.com/chuchugao2/CSMTopk)
 
    *Chuchu Gao, Youhuan Li, Zhibang Yang, Xu Zhou.*
