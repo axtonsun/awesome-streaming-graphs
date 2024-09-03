@@ -185,15 +185,75 @@ Must-read papers on streaming graph
 
 ### [Triangle Count](#content) 
 
-1. **Sliding Window-based Approximate Triangle Counting over Streaming Graphs with Duplicate Edges.** SIGMOD Conference 2021: 645-657 [[paper]](https://dl.acm.org/doi/10.1145/3448016.3452800)
+1. **Compact Estimator for Streaming Triangle Counting.** IEEE Trans. Knowl. Data Eng. 36(8): 3712-3724 (2024) [[paper]](https://doi.org/10.1109/TKDE.2024.3371228)
+
+   *Jiqing Gu, Chao Song, Haipeng Dai, Li Lu, Ming Liu.* 
+
+1. **Sliding window-based approximate triangle counting with bounded memory usage.** VLDB J. 32(5): 1087-1110 (2023) [[paper]](https://doi.org/10.1007/s00778-023-00783-3) [[code]](https://github.com/StreamingTriangleCounting/TriangleCounting)
 
    *Xiangyang Gou, Lei Zou.* 
-   
-1. **Memory-Efficient and Accurate Sampling for Counting Local Triangles in Graph Streams: From Simple to Multigraphs.** ACM Trans. Knowl. Discov. Data 12(1): 4:1-4:28 (2018) [[paper]](https://dl.acm.org/doi/10.1145/3022186)
+
+1. **Sliding Window-based Approximate Triangle Counting over Streaming Graphs with Duplicate Edges.** SIGMOD Conference 2021: 645-657 [[paper]](https://dl.acm.org/doi/10.1145/3448016.3452800) [[code]](https://github.com/XiangyangGou-pku/TriangleCounting)
+
+   *Xiangyang Gou, Lei Zou.* 
+
+1. **Distributed Triangle Approximately Counting Algorithms in Simple Graph Stream.** ACM Trans. Knowl. Discov. Data 16(4): 79:1-79:43 (2022) [[paper]](https://doi.org/10.1145/3494562) [[code]](https://github.com/yangx0517/Distributed-triangle-approximately-counting-algorithms-in-simple-graph-stream)
+
+   *Xu Yang, Chao Song, Mengdi Yu, Jiqing Gu, Ming Liu.* 
+
+1. **Distributed Triangle Counting Algorithms in Simple Graph Stream.** ICPADS 2019: 294-301 [[paper]](https://doi.org/10.1109/ICPADS47876.2019.00049)
+
+   *Mengdi Yu, Chao Song, Jiqing Gu, Ming Liu.* 
+
+1. **CoCoS: Fast and Accurate Distributed Triangle Counting in Graph Streams.** ACM Trans. Knowl. Discov. Data 15(3): 38:1-38:30 (2021) [[paper]](https://doi.org/10.1145/3441487) [[code]](https://github.com/kijungs/cocos)
+
+   *Kijung Shin, Euiwoong Lee, Jinoh Oh, Mohammad Hammoud, Christos Faloutsos.* 
+
+1. **Tri-Fly: Distributed Estimation of Global and Local Triangle Counts in Graph Streams.** PAKDD (3) 2018: 651-663 [[paper]](https://doi.org/10.1007/978-3-319-93040-4_51) [[code]](https://github.com/kijungs/trifly)
+
+   *Kijung Shin, Mohammad Hammoud, Euiwoong Lee, Jinoh Oh, Christos Faloutsos.* 
+
+1. **Fast, Accurate and Provable Triangle Counting in Fully Dynamic Graph Streams.** ACM Trans. Knowl. Discov. Data 14(2): 12:1-12:39 (2020) [[paper]](https://doi.org/10.1145/3375392) [[code]](https://github.com/kijungs/thinkd)
+
+   *Kijung Shin, Sejoon Oh, Jisu Kim, Bryan Hooi, Christos Faloutsos.* 
+
+1. **Think Before You Discard: Accurate Triangle Counting in Graph Streams with Deletions.** ECML/PKDD (2) 2018: 141-157 [[paper]](https://doi.org/10.1007/978-3-030-10928-8_9) [[code]](https://github.com/kijungs/thinkd)
+
+   *Kijung Shin, Jisu Kim, Bryan Hooi, Christos Faloutsos.* 
+
+1. **Temporal locality-aware sampling for accurate triangle counting in real graph streams.** VLDB J. 29(6): 1501-1525 (2020) [[paper]](https://doi.org/10.1007/s00778-020-00624-7) [[code]](https://github.com/kijungs/waiting_room)
+
+   *Dongjin Lee, Kijung Shin, Christos Faloutsos.* 
+
+1. **WRS: Waiting Room Sampling for Accurate Triangle Counting in Real Graph Streams.** . ICDM 2017: 1087-1092 [[paper]](https://doi.org/10.1109/ICDM.2017.143) [[code]](https://github.com/kijungs/waiting_room)
+
+   *Kijung Shin.* 
+
+1. **REPT: A Streaming Algorithm of Approximating Global and Local Triangle Counts in Parallel.** ICDE 2019: 758-769 [[paper]](https://doi.org/10.1109/ICDE.2019.00073)
+
+   *Pinghui Wang, Peng Jia, Yiyan Qi, Yu Sun, Jing Tao, Xiaohong Guan* 
+
+1. **FURL: Fixed-memory and uncertainty reducing local triangle counting for multigraph streams.** Data Min. Knowl. Discov. 33(5): 1225-1253 (2019) [[paper]](https://doi.org/10.1007/s10618-019-00630-6) [[Code]](https://datalab.snu.ac.kr/furl/furl-v1.0.zip)
+
+   *Minsoo Jung, Yongsub Lim, Sunmin Lee, U Kang.* 
+
+1. **Memory-Efficient and Accurate Sampling for Counting Local Triangles in Graph Streams: From Simple to Multigraphs.** ACM Trans. Knowl. Discov. Data 12(1): 4:1-4:28 (2018) [[paper]](https://dl.acm.org/doi/10.1145/3022186) [[Code]](http://datalab.snu.ac.kr/paper/mascot/mascot_v1.0.zip)
 
    *Yongsub Lim, Minsoo Jung, U Kang.* 
-   
-1. **TRIÈST: Counting Local and Global Triangles in Fully-Dynamic Streams with Fixed Memory Size..** KDD 2016: 825-834 [[paper]](https://dl.acm.org/doi/10.1145/2939672.2939771)
+
+1. **MASCOT: Memory-efficient and Accurate Sampling for Counting Local Triangles in Graph Streams.** KDD 2015: 685-694 [[paper]](https://dl.acm.org/doi/10.1145/2783258.2783285) [[Code]](http://datalab.snu.ac.kr/paper/mascot/mascot_v1.0.zip)
+
+   *Yongsub Lim, U Kang.* 
+
+1. **Approximately Counting Triangles in Large Graph Streams Including Edge Duplicates with a Fixed Memory Usage.** Proc. VLDB Endow. 11(2): 162-175 (2017) [[paper]](https://www.vldb.org/pvldb/vol11/p162-wang.pdf)
+
+   *Pinghui Wang, Yiyan Qi, Yu Sun, Xiangliang Zhang, Jing Tao, Xiaohong Guan.* 
+
+1. **TRIÈST: Counting Local and Global Triangles in Fully Dynamic Streams with Fixed Memory Size.** ACM Trans. Knowl. Discov. Data 11(4): 43:1-43:50 (2017) [[paper]](https://dl.acm.org/doi/10.1145/3059194) [[code]](https://github.com/aepasto/triest)
+
+   *Lorenzo De Stefani, Alessandro Epasto, Matteo Riondato, Eli Upfal.* 
+
+1. **TRIÈST: Counting Local and Global Triangles in Fully-Dynamic Streams with Fixed Memory Size.** KDD 2016: 825-834 [[paper]](https://dl.acm.org/doi/10.1145/2939672.2939771) [[code]](https://github.com/aepasto/triest)
 
    *Lorenzo De Stefani, Alessandro Epasto, Matteo Riondato, Eli Upfal.* 
  
@@ -206,7 +266,6 @@ Must-read papers on streaming graph
 1. **Approximately Counting Butterflies in Large Bipartite Graph Streams.** IEEE Trans. Knowl. Data Eng. 34(12): 5621-5635 (2022) [[paper]](https://ieeexplore.ieee.org/document/9366975)
 
    *Rundong Li, Pinghui Wang, Peng Jia, Xiangliang Zhang, Junzhou Zhao, Jing Tao, Ye Yuan, Xiaohong Guan.* 
-
 
 1. **sGrapp: Butterfly Approximation in Streaming Graphs.** ACM Trans. Knowl. Discov. Data 16(4): 76:1-76:43 (2022) [[paper]](https://dl.acm.org/doi/10.1145/3495011) [[code]](https://github.com/dsg-uwaterloo/s-graffito/blob/master/files/sGrapp_artifacts.zip)
 
