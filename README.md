@@ -23,6 +23,7 @@ Must-read papers on streaming graph
 </table>
 
 ## [Keynote](#content)
+
 1. **Streaming Graph Processing and Analytics.** [[slides]](https://cs.uwaterloo.ca/~tozsu/presentations/streaming_graph.pdf) [[DEBS'20 video]](https://www.youtube.com/watch?v=wKJvm_O-Gyc) [[PKUMOD'20 video]](https://www.bilibili.com/video/BV1u54y1S7wj)
    
    *M. Tamer Özsu.* 
@@ -33,9 +34,14 @@ Must-read papers on streaming graph
 
 1. **An Introduction to Graph Analytics Platform - Very Short Version.** [[slides]](https://cs.uwaterloo.ca/~tozsu/presentations/Graph-analytics-shortest.pdf)
    
-   *M. Tamer Özsu.* 
+   *M. Tamer Özsu.*
 
 ## [Survey papers](#content)
+
+1. **Practice of Streaming Processing of Dynamic Graphs: Concepts, Models, and Systems.** IEEE Trans. Parallel Distributed Syst. 34(6): 1860-1876 (2023) [[paper]](https://ieeexplore.ieee.org/document/9629281)
+   
+   *Maciej Besta, Marc Fischer, Vasiliki Kalavri, Michael Kapralov, Torsten Hoefler.*
+   
 1. **图数据流的模型、算法和系统[J].** 大数据, 2018, 4(4): 44-55. [[paper]](http://www.infocomm-journal.com/bdr/CN/10.11959/j.issn.2096-0271.2018039)
    
    *李友焕, 邹磊.*  
@@ -45,15 +51,68 @@ Must-read papers on streaming graph
    *Andrew McGregor.* 
    
 ## [System](#content)
+
+1. **GraphGuard: Private Time-Constrained Pattern Detection Over Streaming Graphs in the Cloud.** USENIX Security Symposium 2024 [[paper]](https://www.usenix.org/system/files/usenixsecurity24-wang-songlei.pdf) [[slides]](https://www.usenix.org/system/files/usenixsecurity24_slides-wang-songlei.pdf) [[video]](https://www.youtube.com/watch?v=kftJIwye0ts)
+
+   *Songlei Wang, Yifeng Zheng, Xiaohua Jia.*
+   
+1. **LSGraph: A Locality-centric High-performance Streaming Graph Engine.** EuroSys 2024: 33-49 [[paper]](https://dl.acm.org/doi/10.1145/3627703.3650076)
+
+   *Hao Qi, Yiyang Wu, Ligang He, Yu Zhang, Kang Luo, Minzhi Cai, Hai Jin, Zhan Zhang, Jin Zhao.*
+   
+1. **ACGraph: Accelerating Streaming Graph Processing via Dependence Hierarchy.** DAC 2023: 1-6 [[paper]](https://ieeexplore.ieee.org/document/10247904)
+
+   *Zihan Jiang, Fubing Mao, Yapu Guo, Xu Liu, Haikun Liu, Xiaofei Liao, Hai Jin, Wei Zhang.*
+   
+1. **GeaFlow: A Graph Extended and Accelerated Dataflow System.** Proc. ACM Manag. Data 1(2): 191:1-191:27 (2023) [[paper]](https://dl.acm.org/doi/10.1145/3589771)
+
+   *Zhenxuan Pan, Tao Wu, Qingwen Zhao, Qiang Zhou, Zhiwei Peng, Jiefeng Li, Qi Zhang, Guanyu Feng, Xiaowei Zhu.*
+   
+1. **GraphFly: Efficient Asynchronous Streaming Graphs Processing via Dependency-Flow.** SC 2022: 45:1-45:14 [[paper]](https://dl.acm.org/doi/10.5555/3571885.3571944)
+
+   *Dan Chen, Chuangyi Gui, Yi Zhang, Hai Jin, Long Zheng, Yu Huang, Xiaofei Liao.*
+   
+1. **TDGraph: a topology-driven accelerator for high-performance streaming graph processing.** ISCA 2022: 116-129 [[paper]](https://dl.acm.org/doi/10.1145/3470496.3527409)
+
+   *Jin Zhao, Yun Yang, Yu Zhang, Xiaofei Liao, Lin Gu, Ligang He, Bingsheng He, Hai Jin, Haikun Liu, Xinyu Jiang, Hui Yu.*
+   
+1. **GraphZeppelin: Storage-Friendly Sketching for Connected Components on Dynamic Graph Streams.** SIGMOD Conference 2022: 325-339 [[paper]](https://dl.acm.org/doi/10.1145/3514221.3526146)
+
+   *David Tench, Evan West, Victor Zhang, Michael A. Bender, Abiyaz Chowdhury, J. Ahmed Dellas, Martin Farach-Colton, Tyler Seip, Kenny Zhang.*
+   
+1. **Controlling Memory Footprint of Stateful Streaming Graph Processing.** USENIX ATC 2021: 269-283 [[paper]](https://www.usenix.org/system/files/atc21-vaziri.pdf) [[sildes]](https://www.usenix.org/system/files/atc21_slides_vaziri.pdf) [[video]](https://www.youtube.com/watch?v=Jg_LRUEbMkc)
+
+   *Pourya Vaziri, Keval Vora.*
+
 1. **RisGraph: A Real-Time Streaming System for Evolving Graphs to Support Sub-millisecond Per-update Analysis at Millions Ops/s.** SIGMOD Conference 2021: 513-527 [[paper]](https://dl.acm.org/doi/10.1145/3448016.3457263)
 
    *Guanyu Feng, Zixuan Ma, Daixuan Li, Shengqi Chen, Xiaowei Zhu, Wentao Han, Wenguang Chen*
-   
+
+1. **DZiG: sparsity-aware incremental processing of streaming graphs.** EuroSys 2021: 83-98 [[paper]](https://dl.acm.org/doi/10.1145/3447786.3456230)
+
+   *Mugilan Mariappan, Joanna Che, Keval Vora.*
+
+1. **Exploiting Buffered Updates for Fast Streaming Graph Analysis.** IEEE Trans. Computers 70(2): 255-269 (2021) [[paper]](https://ieeexplore.ieee.org/document/9067060)
+
+   *Feng Sheng, Qiang Cao, Jie Yao.*
+
+1. **GraphBolt: Dependency-Driven Synchronous Processing of Streaming Graphs.** EuroSys 2019: 25:1-25:16 [[paper]](https://dl.acm.org/doi/10.1145/3302424.3303974)
+
+   *Mugilan Mariappan, Keval Vora.* 
+
 1. **GraphOne: A Data Store for Real-time Analytics on Evolving Graphs.** FAST 2019: 249-263 [[paper]](https://www.usenix.org/conference/fast19/presentation/kumar) [[slides]](https://www.usenix.org/sites/default/files/conference/protected-files/fast19_slides_kumar.pdf) [[video]](https://www.youtube.com/watch?v=Pqps3bz1LE0) 
 
-   *Pradeep Kumar, H. Howie Huang.* 
+   *Pradeep Kumar, H. Howie Huang.*
+
+1. **KickStarter: Fast and Accurate Computations on Streaming Graphs via Trimmed Approximations.** ASPLOS 2017: 237-251 [[paper]](https://dl.acm.org/doi/10.1145/3037697.3037748)
+
+   *Keval Vora, Rajiv Gupta, Guoqing Xu.* 
 
 ## [Graph Stream Summarization](#content)
+
+1. **Mayfly: a Neural Data Structure for Graph Stream Summarization.** ICLR 2024 [[paper]](https://openreview.net/pdf?id=n7Sr8SW4bn) [[code]](https://openreview.net/attachment?id=n7Sr8SW4bn&name=supplementary_material)
+
+   *Yuan Feng, Yukun Cao, Hairu Wang, Xike Xie, S. Kevin Zhou.*
 
 1. **Auxo: A Scalable and Efficient Graph Stream Summarization Structure.** Proc. VLDB Endow. 16(6): 1386-1398 (2023) [[paper]](https://www.vldb.org/pvldb/vol16/p1386-chen.pdf)
 
@@ -185,6 +244,10 @@ Must-read papers on streaming graph
 
 ### [Triangle Count](#content) 
 
+1. **Fast and Accurate Triangle Counting in Graph Streams Using Predictions.** ICDM 2024 [[paper]](https://arxiv.org/abs/2409.15205) [[code]](https://github.com/VandinLab/Tonic)
+
+   *Cristian Boldrin, Fabio Vandin.*
+
 1. **Compact Estimator for Streaming Triangle Counting.** IEEE Trans. Knowl. Data Eng. 36(8): 3712-3724 (2024) [[paper]](https://doi.org/10.1109/TKDE.2024.3371228)
 
    *Jiqing Gu, Chao Song, Haipeng Dai, Li Lu, Ming Liu.* 
@@ -259,6 +322,10 @@ Must-read papers on streaming graph
  
 ### [Butterfly Count](#content)
 
+1. **FABLE: Approximate Butterfly Counting in Bipartite Graph Stream with Duplicate Edges.** CIKM 2024: 2158-2167 [[paper]](https://dl.acm.org/doi/10.1145/3627673.3679812)
+
+   *Guozhang Sun, Yuhai Zhao, Yuan Li.*
+   
 1. **Counting Butterflies in Fully Dynamic Bipartite Graph Streams.** ICDE 2024: 2917-2930 [[paper]](https://doi.org/10.1109/ICDE60146.2024.00226)
 
    *Serafeim Papadias, Zoi Kaoudi, Varun Pandey, Jorge-Arnulfo Quiané-Ruiz, Volker Markl.* 
