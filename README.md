@@ -1,5 +1,8 @@
 # awesome-streaming-graphs
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+[![Awesome](https://awesome.re/badge.svg)](https://github.com/axtonsun/awesome-streaming-graphs)
+![](https://img.shields.io/github/last-commit/axtonsun/awesome-streaming-graphs?color=green) 
+![](https://img.shields.io/github/stars/axtonsun/awesome-streaming-graphs)
+![](https://img.shields.io/badge/PRs-Welcome-red)
 
 Must-read papers on streaming graph
 
@@ -109,6 +112,14 @@ Must-read papers on streaming graph
    *Keval Vora, Rajiv Gupta, Guoqing Xu.* 
 
 ## [Graph Stream Summarization](#content)
+
+1. **HourglassSketch: An Efficient and Scalable Framework for Graph Stream Summarization.** ICDE 2025 [[paper]](https://ntguojiarui.github.io/papers/HourglassSketch-ICDE25.pdf) [[code]](https://github.com/HourglassSketch/HourglassSketch-code)
+
+   *Jiarui Guo, Boxuan Chen, Kaicheng Yang, Tong Yang, Zirui Liu, Qiuheng Yin, Sha Wang, Yuhan Wu, Xiaolin Wang, Bin Cui, Tao Li, Xi Peng, Renhai Chen, Gong Zhang.*
+
+1. **HIGGS: HIerarchy-Guided Graph Stream Summarization.** ICDE 2025 [[paper]](https://arxiv.org/abs/2412.15516)
+
+   *Xuan Zhao, Xike Xie, Christian S. Jensen.*
 
 1. **Mayfly: a Neural Data Structure for Graph Stream Summarization.** ICLR 2024 [[paper]](https://openreview.net/pdf?id=n7Sr8SW4bn) [[code]](https://openreview.net/attachment?id=n7Sr8SW4bn&name=supplementary_material)
 
