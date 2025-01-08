@@ -135,7 +135,19 @@ Must-read papers on streaming graph
    
 1. **Scube: Efficient Summarization for Skewed Graph Streams.** ICDCS 2022: 100-110 [[paper]](https://doi.org/10.1109/ICDCS54860.2022.00019)
 
-   *Ming Chen, Renxiang Zhou, Hanhua Chen, Hai Jin.* 
+   *Ming Chen, Renxiang Zhou, Hanhua Chen, Hai Jin.*
+
+1. **A parameter-free approach to lossless summarization of fully dynamic graphs.** Inf. Sci. 589: 376-394 (2022) [[paper]](https://doi.org/10.1016/j.ins.2021.12.116)
+
+   *Ziyi Ma, Yuling Liu, ZhiBang Yang, Jianye Yang, Kenli Li.*
+
+1. **A Parameter-Free Approach for Lossless Streaming Graph Summarization.** DASFAA (1) 2021: 385-393 [[paper]](https://doi.org/10.1007/978-3-030-73194-6_26)
+
+   *Ziyi Ma, Jianye Yang, Kenli Li, Yuling Liu, Xu Zhou, Yikun Hu.*
+
+1. **DMatrix: Toward fast and accurate queries in graph stream.** Comput. Networks 198: 108403 (2021) [[paper]](https://doi.org/10.1016/j.comnet.2021.108403) [[code]](https://github.com/houchangsheng/DMatrix)
+
+   *Changsheng Hou, Bingnan Hou, Tongqing Zhou, Zhiping Cai.*
 
 1. **Graph Stream Sketch: Summarizing Graph Streams With High Speed and Accuracy.** IEEE Trans. Knowl. Data Eng. 35(6): 5901-5914 (2023) [[paper]](https://doi.org/10.1109/TKDE.2022.3174570)
 
@@ -151,7 +163,11 @@ Must-read papers on streaming graph
 
 1. **Graph Stream Summarization: From Big Bang to Big Crunch.** SIGMOD Conference 2016: 1481-1496 [[paper]](https://dl.acm.org/doi/10.1145/2882903.2915223) [[slides]](https://prezi.com/wj5kw9wbmr8o/tcm/)
 
-   *Nan Tang, Qing Chen, Prasenjit Mitra.* 
+   *Nan Tang, Qing Chen, Prasenjit Mitra.*
+
+1. **gSketch: On Query Estimation in Graph Streams.** Proc. VLDB Endow. 5(3): 193-204 (2011) [[paper]](http://www.vldb.org/pvldb/vol5/p193_peixiangzhao_vldb2012.pdf)
+
+   *Peixiang Zhao, Charu C. Aggarwal, Min Wang.*
 
 ## [Exact Algorithms](#content) 
 
