@@ -271,13 +271,21 @@ Must-read papers on streaming graph
 
 ### [Triangle Count](#content) 
 
-1. **Fast and Accurate Triangle Counting in Graph Streams Using Predictions.** ICDM 2024 [[paper]](https://arxiv.org/abs/2409.15205) [[code]](https://github.com/VandinLab/Tonic)
+1. **DTC: Real-Time and Accurate Distributed Triangle Counting in Fully Dynamic Graph Streams.** SRDS 2024: 198-209 [[paper]](https://doi.org/10.1109/SRDS64841.2024.00028) [[code]](https://github.com/anonymous4cs/Real-Time-and-Accurate-Distributed-Triangle-Counting-in-Fully-Dynamic-Graph-Streams)
+
+   *Wei Xuan, Yan Liang, Huawei Cao, Ning Lin, Xiaochun Ye, Dongrui Fan.*
+
+1. **Fast and Accurate Triangle Counting in Graph Streams Using Predictions.** ICDM 2024: 31-40 [[paper]](https://doi.org/10.1109/ICDM59182.2024.00010) [[code]](https://github.com/VandinLab/Tonic)
 
    *Cristian Boldrin, Fabio Vandin.*
 
 1. **Compact Estimator for Streaming Triangle Counting.** IEEE Trans. Knowl. Data Eng. 36(8): 3712-3724 (2024) [[paper]](https://doi.org/10.1109/TKDE.2024.3371228)
 
-   *Jiqing Gu, Chao Song, Haipeng Dai, Li Lu, Ming Liu.* 
+   *Jiqing Gu, Chao Song, Haipeng Dai, Li Lu, Ming Liu.*
+
+1. **A distributed streaming framework for edge-cloud triangle counting in graph streams.** Knowl. Based Syst. 278: 110878 (2023) [[paper]](https://doi.org/10.1016/j.knosys.2023.110878) [[code]](https://github.com/yangx0517/TbEC/tree/master)
+
+   *Xu Yang, Chao Song, Jiqing Gu, Ke Li, Hongwei Li.* 
 
 1. **Sliding window-based approximate triangle counting with bounded memory usage.** VLDB J. 32(5): 1087-1110 (2023) [[paper]](https://doi.org/10.1007/s00778-023-00783-3) [[code]](https://github.com/StreamingTriangleCounting/TriangleCounting)
 
