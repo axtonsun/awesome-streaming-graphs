@@ -12,16 +12,17 @@ Must-read papers on streaming graph
 <tr><td colspan="2"><a href="#keynote">1. Keynote</a></td></tr> 
 <tr><td colspan="2"><a href="#survey-papers">2. Survey</a></td></tr> 
 <tr><td colspan="2"><a href="#system">3. System</a></td></tr> 
-<tr><td colspan="2"><a href="#graph-stream-summarization">4. Graph Stream Summarization</a></td></tr> 
-<tr><td colspan="2"><a href="#exact-algorithms">5. Exact Algorithms</a></td></tr>
+<tr><td colspan="2"><a href="#streaming-graph-partitioning">4. Streaming Graph Partitioning</a></td></tr> 
+<tr><td colspan="2"><a href="#graph-stream-summarization">5. Graph Stream Summarization</a></td></tr> 
+<tr><td colspan="2"><a href="#exact-algorithms">6. Exact Algorithms</a></td></tr>
 <tr>
-    <td>&ensp;<a href="#subgraph-matching">5.1 Subgraph Matching</a></td>
-    <td>&ensp;<a href="#regular-path-query">5.2 Regular Path Query</a></td>
+    <td>&ensp;<a href="#subgraph-matching">6.1 Subgraph Matching</a></td>
+    <td>&ensp;<a href="#regular-path-query">6.2 Regular Path Query</a></td>
 </tr>
-<tr><td colspan="2"><a href="#approximation-algorithms">6. Approximation Algorithms</a></td></tr>
+<tr><td colspan="2"><a href="#approximation-algorithms">7. Approximation Algorithms</a></td></tr>
 <tr>
-    <td>&ensp;<a href="#triangle-count">6.1 Triangle Count</a></td>
-    <td>&ensp;<a href="#butterfly-count">6.2 Butterfly Count</a></td>
+    <td>&ensp;<a href="#triangle-count">7.1 Triangle Count</a></td>
+    <td>&ensp;<a href="#butterfly-count">7.2 Butterfly Count</a></td>
 </tr>
 </table>
 
@@ -110,6 +111,68 @@ Must-read papers on streaming graph
 1. **KickStarter: Fast and Accurate Computations on Streaming Graphs via Trimmed Approximations.** ASPLOS 2017: 237-251 [[paper]](https://dl.acm.org/doi/10.1145/3037697.3037748)
 
    *Keval Vora, Rajiv Gupta, Guoqing Xu.* 
+
+## [Streaming Graph Partitioning](#content)
+
+1. **CUTTANA: Scalable Graph Partitioning for Faster Distributed Graph Databases and Analytics.**  Proc. VLDB Endow. 18(1): 14-27 (2024) [[paper]](https://www.vldb.org/pvldb/vol18/p14-hajidehi.pdf)
+
+   *Milad Rezaei Hajidehi, Sraavan Sridhar, Margo I. Seltzer.*
+
+1. **Play like a Vertex: A Stackelberg Game Approach for Streaming Graph Partitioning.** Proc. ACM Manag. Data 2(3): 162 (2024) [[paper]](https://doi.org/10.1145/3654965)
+
+   *Zezhong Ding, Yongan Xiang, Shangyou Wang, Xike Xie, S. Kevin Zhou.*
+
+1. **A Mixed-State Streaming Edge Partitioning based on Combinatorial Design.** ICDM 2023: 868-877 [[paper]](https://doi.org/10.1109/ICDM58522.2023.00096)
+
+   *Zhenyu Zhang, Wenwen Qu, Weixi Zhang, Junlin Shang, Xiaoling Wang.*
+
+1. **Lightweight Streaming Graph Partitioning by Fully Utilizing Knowledge from Local View.** ICDCS 2023: 614-625 [[paper]](https://doi.org/10.1109/ICDCS57875.2023.00079)
+
+   *Zhigang Wang, Zichao Yang, Ning Wang, Yujie Du, Jie Nie, Zhiqiang Wei, Yu Gu, Ge Yu.*
+
+1. **Out-of-Core Edge Partitioning at Linear Run-Time.** ICDE 2022: 2629-2642 [[paper]](https://doi.org/10.1109/ICDE53745.2022.00242)
+
+   *Ruben Mayer, Kamil Orujzade, Hans-Arno Jacobsen.*
+
+1. **GCNSplit: bounding the state of streaming graph partitioning.** aiDM@SIGMOD 2022: 3:1-3:12 [[paper]](https://doi.org/10.1145/3533702.3534920) [[code]](https://github.com/CASP-Systems-BU/GCNSplit)
+
+   *Michal Zwolak, Zainab Abbas, Sonia Horchidan, Paris Carbone, Vasiliki Kalavri.*
+
+1. **Quasi-Streaming Graph Partitioning: A Game Theoretical Approach.** IEEE Trans. Parallel Distributed Syst. 30(7): 1643-1656 (2019) [[paper]](https://doi.org/10.1109/TPDS.2018.2890515)
+
+   *Qiang-Sheng Hua, Yangyang Li, Dongxiao Yu, Hai Jin.*
+
+1. **Experimental Analysis of Streaming Algorithms for Graph Partitioning.** SIGMOD Conference 2019: 1375-1392 [[paper]](https://doi.org/10.1145/3299869.3300076) [[code]](https://github.com/anilpacaci/streaming-graph-partitioning)
+
+   *Anil Pacaci, M. Tamer Özsu.*
+
+1. **Streaming Graph Partitioning: An Experimental Study.** Proc. VLDB Endow. 11(11): 1590-1603 (2018) [[paper]](http://www.vldb.org/pvldb/vol11/p1590-abbas.pdf)
+
+   *Zainab Abbas, Vasiliki Kalavri, Paris Carbone, Vladimir Vlassov.*
+
+1. **HDRF: Stream-Based Partitioning for Power-Law Graphs.** CIKM 2015: 243-252 [[paper]](https://doi.org/10.1145/2806416.2806424)
+
+   *Fabio Petroni, Leonardo Querzoni, Khuzaima Daudjee, Shahin Kamali, Giorgio Iacoboni.*
+
+1. **FENNEL: streaming graph partitioning for massive scale graphs.** WSDM 2014: 333-342 [[paper]](https://doi.org/10.1145/2556195.2556213)
+
+   *Charalampos E. Tsourakakis, Christos Gkantsidis, Bozidar Radunovic, Milan Vojnovic.*
+
+1. **Distributed Power-law Graph Computing: Theoretical and Empirical Analysis.** NIPS 2014: 1673-1681 [[paper]](http://papers.nips.cc/paper/5396-distributed-power-law-graph-computing-theoretical-and-empirical-analysis)
+
+   *Cong Xie, Ling Yan, Wu-Jun Li, Zhihua Zhang.*
+
+1. **GraphBuilder: scalable graph ETL framework.** GRADES 2013: 4 [[paper]](http://event.cwi.nl/grades2013/04-jain.pdf)
+
+   *Nilesh Jain, Guangdeng Liao, Theodore L. Willke.*
+
+1. **Streaming graph partitioning for large distributed graphs.** KDD 2012: 1222-1230 [[paper]](https://doi.org/10.1145/2339530.2339722)
+
+   *Isabelle Stanton, Gabriel Kliot.*
+
+1. **PowerGraph: Distributed Graph-Parallel Computation on Natural Graphs.** OSDI 2012: 17-30 [[paper]](https://www.usenix.org/conference/osdi12/technical-sessions/presentation/gonzalez)
+
+   *Joseph E. Gonzalez, Yucheng Low, Haijie Gu, Danny Bickson, Carlos Guestrin.*
 
 ## [Graph Stream Summarization](#content)
 
