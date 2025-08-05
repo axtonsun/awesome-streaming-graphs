@@ -318,7 +318,7 @@ Must-read papers on streaming graph
 
    *Siyuan Zhang, Zhenying He, Yinan Jing, Kai Zhang, X. Sean Wang.* 
 
-1. **LM-SRPQ: Efficiently Answering Regular Path Query in Streaming Graphs.** Proc. VLDB Endow. 17(5): 1047-1059 [[paper]](https://www.vldb.org/pvldb/vol17/p1047-zou.pdf) [[code]](https://github.com/StreamingTriangle/LM-SRPQ)
+1. **LM-SRPQ: Efficiently Answering Regular Path Query in Streaming Graphs.** Proc. VLDB Endow. 17(5): 1047-1059 (2024) [[paper]](https://www.vldb.org/pvldb/vol17/p1047-zou.pdf) [[code]](https://github.com/StreamingTriangle/LM-SRPQ)
 
    *Xiangyang Gou, Xinyi Ye, Lei Zou, Jeffrey Xu Yu.* 
 
@@ -333,6 +333,10 @@ Must-read papers on streaming graph
 ## [Approximation Algorithms](#content)
 
 ### [Triangle Count](#content) 
+
+1. **GREAT: Generalized Reservoir Sampling based Triangle Counting Estimation over Streaming Graphs.** Proc. VLDB Endow. 18(7): 2031-2043 (2025) [[paper]](https://www.vldb.org/pvldb/vol18/p2031-wu.pdf) [[code]](https://github.com/sinhong-cheuk/GREAT)
+
+   *Siyue Wu, Dingming Wu, Sinhong Cheuk, Tsz Nam Chan, Kezhong Lu.*
 
 1. **DTC: Real-Time and Accurate Distributed Triangle Counting in Fully Dynamic Graph Streams.** SRDS 2024: 198-209 [[paper]](https://doi.org/10.1109/SRDS64841.2024.00028) [[code]](https://github.com/anonymous4cs/Real-Time-and-Accurate-Distributed-Triangle-Counting-in-Fully-Dynamic-Graph-Streams)
 
