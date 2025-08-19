@@ -114,6 +114,10 @@ Must-read papers on streaming graph
 
 ## [Streaming Graph Partitioning](#content)
 
+1. **Triparts: Scalable Streaming Graph Partitioning to Enhance Community Structure.**  Proc. VLDB Endow. 18(9): 2992 - 3006 (2025) [[paper]](https://www.vldb.org/pvldb/vol18/p2992-simmhan.pdf)
+
+   *Ruchi Bhoot, Tuhin Khare, Manoj Agarwal, Siddharth Jaiswal, Yogesh Simmhan.*
+   
 1. **CUTTANA: Scalable Graph Partitioning for Faster Distributed Graph Databases and Analytics.**  Proc. VLDB Endow. 18(1): 14-27 (2024) [[paper]](https://www.vldb.org/pvldb/vol18/p14-hajidehi.pdf)
 
    *Milad Rezaei Hajidehi, Sraavan Sridhar, Margo I. Seltzer.*
