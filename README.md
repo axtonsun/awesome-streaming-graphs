@@ -238,7 +238,11 @@ Must-read papers on streaming graph
 
 ## [Exact Algorithms](#content) 
 
-### [Subgraph Matching](#content) 
+### [Subgraph Matching](#content)
+
+1. **Continuous Subgraph Matching via Cost-Model-based Dynamic Vertex Dominance Embeddings.** Proc. ACM Manag. Data 3(6): 309:1-309:27 (2025) [[paper]](https://dl.acm.org/doi/10.1145/3769774)
+
+   *Yutong Ye, Xiang Lian, Nan Zhang, Mingsong Chen.*
 
 1. **TC-Match: Fast Time-constrained Continuous Subgraph Matching.** Proc. VLDB Endow. 17(11): 2791-2804 (2024) [[paper]](https://www.vldb.org/pvldb/vol17/p2791-yang.pdf) [[code]](https://github.com/Sh-Fang/TCMatch)
 
@@ -317,6 +321,10 @@ Must-read papers on streaming graph
    *Wenfei Fan, Jianzhong Li, Jizhou Luo, Zijing Tan, Xin Wang, Yinghui Wu.* 
 
 ### [Regular Path Query](#content) 
+
+1. **DRPQ: Distributed Evaluation of Regular Path Queries On Streaming Graphs.** Proc. ACM Manag. Data 3(6): 317:1-317:27 (2025) [[paper]](https://dl.acm.org/doi/10.1145/3769782)
+
+   *Siyuan Zhang, Kai Zhang, Zhenying He, Yinan Jing, Zhigang Zhao, X. Sean Wang.*
 
 1. **MWP: Multi-Window Parallel Evaluation of Regular Path Queries on Streaming Graphs.** Proc. ACM Manag. Data 2(1): 5:1-5:26 (2024) [[paper]](https://dl.acm.org/doi/10.1145/3639260)
 
