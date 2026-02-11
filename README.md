@@ -23,6 +23,7 @@ Must-read papers on streaming graph
 <tr>
     <td>&ensp;<a href="#triangle-count">7.1 Triangle Count</a></td>
     <td>&ensp;<a href="#butterfly-count">7.2 Butterfly Count</a></td>
+    <td>&ensp;<a href="#matching">7.3 Matching</a></td>
 </tr>
 </table>
 
@@ -455,3 +456,9 @@ Must-read papers on streaming graph
 1. **FLEET: Butterfly Estimation from a Bipartite Graph Stream.** CIKM 2019: 1201-1210 [[paper]](https://dl.acm.org/doi/10.1145/3357384.3357983) [[code]](https://github.com/beginner1010/fleet)
 
    *Seyed-Vahid Sanei-Mehri, Yu Zhang, Ahmet Erdem Sariyüce, Srikanta Tirthapura.* 
+
+### [Matching](#content)
+
+1. **Semi-Streaming Algorithms for Hypergraph Matching** In 33rd Annual European Symposium on Algorithms (ESA 2025). Leibniz International Proceedings in Informatics (LIPIcs), Volume 351, pp. 79:1-79:19 (2025) [[paper]](https://doi.org/10.4230/LIPIcs.ESA.2025.79) [[code]](https://github.com/HeiHGM/Streaming)
+
+   *Henrik Reinstädtler, S M Ferdous, Alex Pothen, Bora Uçar, and Christian Schulz.*
