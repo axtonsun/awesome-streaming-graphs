@@ -23,6 +23,8 @@ Must-read papers on streaming graph
 <tr>
     <td>&ensp;<a href="#triangle-count">7.1 Triangle Count</a></td>
     <td>&ensp;<a href="#butterfly-count">7.2 Butterfly Count</a></td>
+</tr>
+<tr>
     <td>&ensp;<a href="#matching">7.3 Matching</a></td>
 </tr>
 </table>
@@ -181,11 +183,19 @@ Must-read papers on streaming graph
 
 ## [Graph Stream Summarization](#content)
 
-1. **HourglassSketch: An Efficient and Scalable Framework for Graph Stream Summarization.** ICDE 2025 [[paper]](https://ntguojiarui.github.io/papers/HourglassSketch-ICDE25.pdf) [[code]](https://github.com/HourglassSketch/HourglassSketch-code)
+1. **EdgeSketch: Efficient Analysis of Massive Graph Streams.** arXiv preprint 2026 [[paper]](https://arxiv.org/abs/2602.18957) [[code]](https://github.com/kubal/EdgeSketch)
+
+   *Jakub Lemiesz, Dingqi Yang, Philippe Cudré-Mauroux.*
+
+1. **Crane: An Accurate and Scalable Neural Sketch for Graph Stream Summarization.** arXiv preprint 2026 [[paper]](https://arxiv.org/abs/2602.15360)
+
+   *Boyan Wang, Zhuochen Fan, Dayu Wang, Fangcheng Fu, Zeyu Luan, Lei Zou, Qing Li, Tong Yang.*
+
+1. **HourglassSketch: An Efficient and Scalable Framework for Graph Stream Summarization.** ICDE 2025 [[paper]](https://doi.org/10.1109/ICDE65448.2025.00016) [[code]](https://github.com/HourglassSketch/HourglassSketch-code)
 
    *Jiarui Guo, Boxuan Chen, Kaicheng Yang, Tong Yang, Zirui Liu, Qiuheng Yin, Sha Wang, Yuhan Wu, Xiaolin Wang, Bin Cui, Tao Li, Xi Peng, Renhai Chen, Gong Zhang.*
 
-1. **HIGGS: HIerarchy-Guided Graph Stream Summarization.** ICDE 2025 [[paper]](https://arxiv.org/abs/2412.15516)
+1. **HIGGS: HIerarchy-Guided Graph Stream Summarization.** ICDE 2025 [[paper]](https://doi.org/10.1109/ICDE65448.2025.00114)
 
    *Xuan Zhao, Xike Xie, Christian S. Jensen.*
 
@@ -459,6 +469,6 @@ Must-read papers on streaming graph
 
 ### [Matching](#content)
 
-1. **Semi-Streaming Algorithms for Hypergraph Matching** In 33rd Annual European Symposium on Algorithms (ESA 2025). Leibniz International Proceedings in Informatics (LIPIcs), Volume 351, pp. 79:1-79:19 (2025) [[paper]](https://doi.org/10.4230/LIPIcs.ESA.2025.79) [[code]](https://github.com/HeiHGM/Streaming)
+1. **Semi-Streaming Algorithms for Hypergraph Matching.** ESA 2025: 79:1-79:19 [[paper]](https://doi.org/10.4230/LIPIcs.ESA.2025.79) [[code]](https://github.com/HeiHGM/Streaming)
 
    *Henrik Reinstädtler, S M Ferdous, Alex Pothen, Bora Uçar, and Christian Schulz.*
