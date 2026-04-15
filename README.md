@@ -251,6 +251,10 @@ Must-read papers on streaming graph
 
 ### [Subgraph Matching](#content)
 
+1. **An Extensive Experimental Study of Indexes in Continuous Subgraph Matching: [Experiments & Analysis].** Proc. ACM Manag. Data 4(1): 9:1-9:26 (2026) [[paper]](https://dl.acm.org/doi/10.1145/3786623)
+
+   *Xiangyang Gou, Lei Zou, Jeffrey Xu Yu, Wenjie Zhang.*
+   
 1. **Continuous Subgraph Matching via Cost-Model-based Dynamic Vertex Dominance Embeddings.** Proc. ACM Manag. Data 3(6): 309:1-309:27 (2025) [[paper]](https://dl.acm.org/doi/10.1145/3769774)
 
    *Yutong Ye, Xiang Lian, Nan Zhang, Mingsong Chen.*
