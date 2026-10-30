@@ -40,11 +40,8 @@ Must-read papers on streaming graphs
 
 Each paper entry ends with tags:
 
-- **Result**: `Exact` means the method returns the exact answer to the problem as defined. `Approx` means it returns an estimate or an approximation (sketching, sampling, heuristics, learned estimators). Chapter 11, and learned detectors in Chapter 10, carry no result tag.
-- **Data model**: `Insert-only` means edges (or graphs) only arrive. `Fully dynamic` means edges can be both inserted and deleted. `Sliding window` means only edges within a recent time or count window are valid, and older edges expire. `Snapshots` means the input is a sequence of graph snapshots.
-- `Benchmark` marks experimental studies.
-
-Surveys and Streaming Graph Partitioning carry no tags; Systems and Chapter 11 carry data-model tags only. Within each section, papers are listed from newest to oldest.
+- **Result**: `Exact` means the method returns the exact answer to the problem as defined; randomized methods that are exact with high probability, such as connectivity sketches, also count as `Exact`. `Approx` means it returns an estimate or an approximation (sketching, sampling, heuristics, learned estimators). Neural-network detectors in Section 10.1, and papers in Section 11, carry no result tag.
+- **Data model**: `Insert-only` means edges (or graphs) only arrive. `Fully dynamic` means edges can be both inserted and deleted; edge-weight increases and decreases, as in dynamic road networks, also count. `Sliding window` means only edges within a recent time or count window are valid, and older edges expire. `Snapshots` means the input is a sequence of graph snapshots.
 
 ## [Keynotes](#content)
 
@@ -76,6 +73,10 @@ Surveys and Streaming Graph Partitioning carry no tags; Systems and Chapter 11 c
 
 ## [Systems](#content)
 
+1. **A Comprehensive Survey on Dynamic Graph Processing: Storage and Analytics.** IEEE Trans. Knowl. Data Eng. 38(5): 2488-2507 (2026) [[paper]](https://doi.org/10.1109/tkde.2026.3667713) `Survey`
+
+   *Yuan Zhang, Huawei Cao, Yue Shen, Sibo Li, Yang Feng, Chunxiang Wang, Xuejun An, Xiaochun Ye.*
+
 1. **CEGraph: Cache-Efficient Management for Streaming Graph Processing.** IEEE Trans. Comput. Aided Des. Integr. Circuits Syst. 45(1): 108-119 (2026) [[paper]](https://doi.org/10.1109/tcad.2025.3575362) `Fully dynamic`
 
    *Fubing Mao, Zihan Xie, Longyu Nie, Yu Zhang, Haikun Liu, Xiaofei Liao, Hai Jin, Wei Zhang, Yapu Guo, Jingkang Liu.*
@@ -83,10 +84,6 @@ Surveys and Streaming Graph Partitioning carry no tags; Systems and Chapter 11 c
 1. **DCSR: A Fast Data Structure with Leaf-Oriented Locks for Streaming Graph Processing.** EDBT 2026: 359-371 [[paper]](https://doi.org/10.48786/edbt.2026.29) `Fully dynamic`
 
    *Yue Shen, Jie Zhang, Huawei Cao, Yuan Zhang, Xuejun An.*
-
-1. **Privacy-Preserving Analytics on Outsourced Streaming Graphs: The Case of Pattern Detection.** IEEE Trans. Knowl. Data Eng. 38(5): 3037-3051 (2026) [[paper]](https://doi.org/10.1109/tkde.2026.3673371) `Sliding window`
-
-   *Songlei Wang, Yifeng Zheng, Xiaohua Jia.*
 
 1. **SVSIG: Incremental Streaming Graph Processing with Source Vertex Suppression.** ICS 2026: 539-550 [[paper]](https://doi.org/10.1145/3797905.3807850) `Fully dynamic`
 
@@ -104,29 +101,9 @@ Surveys and Streaming Graph Partitioning carry no tags; Systems and Chapter 11 c
 
    *Qiange Wang, Yongze Yan, Hongshi Tan, Cheng Chen, Cheng Zhao, Jiaming Tian, Jiaxin Jiang, Xiaoliang Cong, Yanfeng Zhang, Ge Yu, Weng-Fai Wong, Bingsheng He.*
 
-1. **Exploring the Landscape of Distributed Graph Sketching.** ALENEX 2025: 133-146 [[paper]](https://doi.org/10.1137/1.9781611978339.11) `Fully dynamic`
-
-   *David Tench, Evan T. West, Kenny Zhang, Michael A. Bender, Daniel DeLayo, Martín Farach-Colton, Gilvir Gill, Tyler Seip, Victor Zhang.*
-
-1. **Ripple: Scalable Incremental GNN Inferencing on Large Streaming Graphs.** ICDCS 2025: 857-867 [[paper]](https://doi.org/10.1109/icdcs63083.2025.00088) `Fully dynamic`
-
-   *Pranjal Naman, Yogesh Simmhan.*
-
-1. **AeonG: An Efficient Built-in Temporal Support in Graph Databases.** Proc. VLDB Endow. 17(6): 1515-1527 (2024) [[paper]](https://www.vldb.org/pvldb/vol17/p1515-lu.pdf) [[code]](https://github.com/hououou/AeonG) `Fully dynamic` `Snapshots`
+1. **AeonG: An Efficient Built-in Temporal Support in Graph Databases.** Proc. VLDB Endow. 17(6): 1515-1527 (2024) [[paper]](https://www.vldb.org/pvldb/vol17/p1515-lu.pdf) [[code]](https://github.com/hououou/AeonG) `Fully dynamic`
 
    *Jiamin Hou, Zhanhao Zhao, Zhouyu Wang, Wei Lu, Guodong Jin, Dong Wen, Xiaoyong Du.*
-
-1. **D3-GNN: Dynamic Distributed Dataflow for Streaming Graph Neural Networks.** Proc. VLDB Endow. 17(11): 2764-2777 (2024) [[paper]](https://www.vldb.org/pvldb/vol17/p2764-guliyev.pdf) [[code]](https://github.com/Rustam-Warwick/d3-gnn) `Fully dynamic`
-
-   *Rustam Guliyev, Aparajita Haldar, Hakan Ferhatosmanoglu.*
-
-1. **GraphGuard: Private Time-Constrained Pattern Detection Over Streaming Graphs in the Cloud.** USENIX Security Symposium 2024 [[paper]](https://www.usenix.org/system/files/usenixsecurity24-wang-songlei.pdf) [[slides]](https://www.usenix.org/system/files/usenixsecurity24_slides-wang-songlei.pdf) [[video]](https://www.youtube.com/watch?v=kftJIwye0ts) `Sliding window`
-
-   *Songlei Wang, Yifeng Zheng, Xiaohua Jia.*
-
-1. **GraphZeppelin: How to Find Connected Components (Even When Graphs Are Dense, Dynamic, and Massive).** ACM Trans. Database Syst. 49(3): 9:1-9:31 (2024) [[paper]](https://doi.org/10.1145/3643846) `Fully dynamic`
-
-   *David Tench, Evan T. West, Victor Zhang, Michael A. Bender, Abiyaz Chowdhury, Daniel DeLayo, J. Ahmed Dellas, Martín Farach-Colton, Tyler Seip, Kenny Zhang.*
 
 1. **LSGraph: A Locality-centric High-performance Streaming Graph Engine.** EuroSys 2024: 33-49 [[paper]](https://doi.org/10.1145/3627703.3650076) `Fully dynamic`
 
@@ -152,33 +129,13 @@ Surveys and Streaming Graph Partitioning carry no tags; Systems and Chapter 11 c
 
    *Zhenxuan Pan, Tao Wu, Qingwen Zhao, Qiang Zhou, Zhiwei Peng, Jiefeng Li, Qi Zhang, Guanyu Feng, Xiaowei Zhu.*
 
-1. **NeutronStream: A Dynamic GNN Training Framework with Sliding Window for Graph Streams.** Proc. VLDB Endow. 17(3): 455-468 (2023) [[paper]](https://www.vldb.org/pvldb/vol17/p455-chen.pdf) [[code]](https://github.com/iDC-NEU/NeutronStream) `Sliding window`
-
-   *Chaoyi Chen, Dechao Gao, Yanfeng Zhang, Qiange Wang, Zhenbo Fu, Xuecang Zhang, Junhua Zhu, Yu Gu, Ge Yu.*
-
-1. **PSMiner: A Pattern-Aware Accelerator for High-Performance Streaming Graph Pattern Mining.** DAC 2023: 1-6 [[paper]](https://doi.org/10.1109/dac56929.2023.10247902) `Fully dynamic`
-
-   *Hao Qi, Yu Zhang, Ligang He, Kang Luo, Jun Huang, Haoyu Lu, Jin Zhao, Hai Jin.*
-
 1. **GraphFly: Efficient Asynchronous Streaming Graphs Processing via Dependency-Flow.** SC 2022: 45:1-45:14 [[paper]](https://dl.acm.org/doi/10.5555/3571885.3571944) `Fully dynamic`
 
    *Dan Chen, Chuangyi Gui, Yi Zhang, Hai Jin, Long Zheng, Yu Huang, Xiaofei Liao.*
 
-1. **GraphZeppelin: Storage-Friendly Sketching for Connected Components on Dynamic Graph Streams.** SIGMOD Conference 2022: 325-339 [[paper]](https://doi.org/10.1145/3514221.3526146) `Fully dynamic`
-
-   *David Tench, Evan T. West, Victor Zhang, Michael A. Bender, Abiyaz Chowdhury, J. Ahmed Dellas, Martín Farach-Colton, Tyler Seip, Kenny Zhang.*
-
-1. **Mnemonic: A Parallel Subgraph Matching System for Streaming Graphs.** IPDPS 2022: 313-323 [[paper]](https://doi.org/10.1109/ipdps53621.2022.00038) `Fully dynamic`
-
-   *Bibek Bhattarai, H. Howie Huang.*
-
 1. **Optimizing Differentially-Maintained Recursive Queries on Dynamic Graphs.** Proc. VLDB Endow. 15(11): 3186-3198 (2022) [[paper]](https://www.vldb.org/pvldb/vol15/p3186-ammar.pdf) [[code]](https://github.com/khaledammar/optimized-DC) `Fully dynamic`
 
    *Khaled Ammar, Siddhartha Sahu, Semih Salihoglu, M. Tamer Özsu.*
-
-1. **T-GCN: A Sampling Based Streaming Graph Neural Network System with Hybrid Architecture.** PACT 2022: 69-82 [[paper]](https://doi.org/10.1145/3559009.3569648) `Insert-only`
-
-   *Chengying Huan, Shuaiwen Leon Song, Yongchao Liu, Heng Zhang, Hang Liu, Charles He, Kang Chen, Jinlei Jiang, Yongwei Wu.*
 
 1. **TDGraph: a topology-driven accelerator for high-performance streaming graph processing.** ISCA 2022: 116-129 [[paper]](https://doi.org/10.1145/3470496.3527409) `Fully dynamic`
 
@@ -208,7 +165,7 @@ Surveys and Streaming Graph Partitioning carry no tags; Systems and Chapter 11 c
 
    *Xiaolin Jiang, Chengshuo Xu, Xizhe Yin, Zhijia Zhao, Rajiv Gupta.*
 
-1. **Dolha - an efficient and exact data structure for streaming graphs.** World Wide Web 23(2): 873-903 (2020) [[paper]](https://doi.org/10.1007/s11280-019-00762-1) `Insert-only` `Sliding window`
+1. **Dolha - an efficient and exact data structure for streaming graphs.** World Wide Web 23(2): 873-903 (2020) [[paper]](https://doi.org/10.1007/s11280-019-00762-1) `Fully dynamic` `Sliding window`
 
    *Fan Zhang, Lei Zou, Li Zeng, Xiangyang Gou.*
 
@@ -262,7 +219,7 @@ Surveys and Streaming Graph Partitioning carry no tags; Systems and Chapter 11 c
 
    *Marcelo Fonseca Faraj, Christian Schulz.*
 
-1. **Experimental Analysis of Streaming Algorithms for Graph Partitioning.** SIGMOD Conference 2019: 1375-1392 [[paper]](https://doi.org/10.1145/3299869.3300076) [[code]](https://github.com/anilpacaci/streaming-graph-partitioning)
+1. **Experimental Analysis of Streaming Algorithms for Graph Partitioning.** SIGMOD Conference 2019: 1375-1392 [[paper]](https://doi.org/10.1145/3299869.3300076) [[code]](https://github.com/anilpacaci/streaming-graph-partitioning) `Benchmark`
 
    *Anil Pacaci, M. Tamer Özsu.*
 
@@ -270,11 +227,11 @@ Surveys and Streaming Graph Partitioning carry no tags; Systems and Chapter 11 c
 
    *Qiang-Sheng Hua, Yangyang Li, Dongxiao Yu, Hai Jin.*
 
-1. **Streaming Graph Partitioning: An Experimental Study.** Proc. VLDB Endow. 11(11): 1590-1603 (2018) [[paper]](https://www.vldb.org/pvldb/vol11/p1590-abbas.pdf)
+1. **Streaming Graph Partitioning: An Experimental Study.** Proc. VLDB Endow. 11(11): 1590-1603 (2018) [[paper]](https://www.vldb.org/pvldb/vol11/p1590-abbas.pdf) `Benchmark`
 
    *Zainab Abbas, Vasiliki Kalavri, Paris Carbone, Vladimir Vlassov.*
 
-1. **Modeling, analysis, and experimental comparison of streaming graph-partitioning policies.** J. Parallel Distributed Comput. 108: 106-121 (2017) [[paper]](https://doi.org/10.1016/j.jpdc.2016.02.003)
+1. **Modeling, analysis, and experimental comparison of streaming graph-partitioning policies.** J. Parallel Distributed Comput. 108: 106-121 (2017) [[paper]](https://doi.org/10.1016/j.jpdc.2016.02.003) `Benchmark`
 
    *Yong Guo, Sungpack Hong, Hassan Chafi, Alexandru Iosup, Dick Epema.*
 
@@ -318,7 +275,7 @@ Surveys and Streaming Graph Partitioning carry no tags; Systems and Chapter 11 c
 
    *Jingxian Hu, Guozhang Sun, Xin Wang, Yuhai Zhao, Yuan Li, Xingwei Wang.*
 
-1. **HIGGS: HIerarchy-Guided Graph Stream Summarization.** ICDE 2025: 1470-1482 [[paper]](https://doi.org/10.1109/ICDE65448.2025.00114) `Approx` `Insert-only`
+1. **HIGGS: HIerarchy-Guided Graph Stream Summarization.** ICDE 2025: 1470-1482 [[paper]](https://doi.org/10.1109/ICDE65448.2025.00114) `Approx` `Fully dynamic`
 
    *Xuan Zhao, Xike Xie, Christian S. Jensen.*
 
@@ -410,11 +367,11 @@ Surveys and Streaming Graph Partitioning carry no tags; Systems and Chapter 11 c
 
    *Jihoon Ko, Yunbum Kook, Kijung Shin.*
 
-1. **Fast and Accurate Graph Stream Summarization.** ICDE 2019: 1118-1129 [[paper]](https://doi.org/10.1109/ICDE.2019.00103) [[code]](https://github.com/Puppy95/Graph-Stream-Sketch) `Approx` `Fully dynamic`
+1. **Fast and Accurate Graph Stream Summarization.** ICDE 2019: 1118-1129 [[paper]](https://doi.org/10.1109/ICDE.2019.00103) [[code]](https://github.com/Puppy95/Graph-Stream-Sketch) `Approx` `Insert-only`
 
    *Xiangyang Gou, Lei Zou, Chenxingyu Zhao, Tong Yang.*
 
-1. **Labeled graph sketches: Keeping up with real-time graph streams.** Inf. Sci. 503: 469-492 (2019) [[paper]](https://doi.org/10.1016/j.ins.2019.07.019) `Approx` `Sliding window`
+1. **Labeled graph sketches: Keeping up with real-time graph streams.** Inf. Sci. 503: 469-492 (2019) [[paper]](https://doi.org/10.1016/j.ins.2019.07.019) `Approx` `Fully dynamic` `Sliding window`
 
    *Chunyao Song, Tingjian Ge, Yao Ge, Haowen Zhang, Xiaojie Yuan.*
 
@@ -452,10 +409,6 @@ Surveys and Streaming Graph Partitioning carry no tags; Systems and Chapter 11 c
 
    *Sandipan Sikdar, Tanmoy Chakraborty, Soumya Sarkar, Niloy Ganguly, Animesh Mukherjee.*
 
-1. **Sampling for Approximate Bipartite Network Projection.** IJCAI 2018: 3286-3292 [[paper]](https://doi.org/10.24963/ijcai.2018/456) `Approx` `Insert-only`
-
-   *Nesreen K. Ahmed, Nick Duffield, Liangzhen Xia.*
-
 1. **On sampling from massive graph streams.** Proc. VLDB Endow. 10(11): 1430-1441 (2017) [[paper]](https://www.vldb.org/pvldb/vol10/p1430-ahmed.pdf) `Approx` `Insert-only`
 
    *Nesreen K. Ahmed, Nick Duffield, Theodore L. Willke, Ryan A. Rossi.*
@@ -480,6 +433,10 @@ Surveys and Streaming Graph Partitioning carry no tags; Systems and Chapter 11 c
 
    *Ziyi Ma, Xinming Ma, Jianye Yang, Liang Yang, Lihua Yin, Xuemin Lin.*
 
+1. **Privacy-Preserving Analytics on Outsourced Streaming Graphs: The Case of Pattern Detection.** IEEE Trans. Knowl. Data Eng. 38(5): 3037-3051 (2026) [[paper]](https://doi.org/10.1109/tkde.2026.3673371) `Exact` `Fully dynamic` `Sliding window`
+
+   *Songlei Wang, Yifeng Zheng, Xiaohua Jia.*
+
 1. **Continuous Subgraph Matching via Cost-Model-based Dynamic Vertex Dominance Embeddings.** Proc. ACM Manag. Data 3(6): 309:1-309:27 (2025) [[paper]](https://doi.org/10.1145/3769774) `Exact` `Fully dynamic`
 
    *Yutong Ye, Xiang Lian, Nan Zhang, Mingsong Chen.*
@@ -495,6 +452,10 @@ Surveys and Streaming Graph Partitioning carry no tags; Systems and Chapter 11 c
 1. **GCSM: GPU-Accelerated Continuous Subgraph Matching for Large Graphs.** IPDPS 2024: 1046-1057 [[paper]](https://doi.org/10.1109/ipdps57955.2024.00097) `Exact` `Fully dynamic`
 
    *Yihua Wei, Peng Jiang.*
+
+1. **GraphGuard: Private Time-Constrained Pattern Detection Over Streaming Graphs in the Cloud.** USENIX Security Symposium 2024 [[paper]](https://www.usenix.org/system/files/usenixsecurity24-wang-songlei.pdf) [[slides]](https://www.usenix.org/system/files/usenixsecurity24_slides-wang-songlei.pdf) [[video]](https://www.youtube.com/watch?v=kftJIwye0ts) `Exact` `Sliding window`
+
+   *Songlei Wang, Yifeng Zheng, Xiaohua Jia.*
 
 1. **In-depth Analysis of Continuous Subgraph Matching in a Common Delta Query Compilation Framework.** Proc. ACM Manag. Data 2(3): 147:1-147:27 (2024) [[paper]](https://doi.org/10.1145/3654950) `Exact` `Fully dynamic` `Benchmark`
 
@@ -512,6 +473,10 @@ Surveys and Streaming Graph Partitioning carry no tags; Systems and Chapter 11 c
 
    *Seunghwan Min, Jihoon Jang, Kunsoo Park, Dora Giammarresi, Giuseppe F. Italiano, Wook-Shin Han.*
 
+1. **A survey of continuous subgraph matching for dynamic graphs.** Knowl. Inf. Syst. 65(3): 945-989 (2023) [[paper]](https://doi.org/10.1007/s10115-022-01753-x) `Survey`
+
+   *Xi Wang, Qianzhen Zhang, Deke Guo, Xiang Zhao.*
+
 1. **Fast Continuous Subgraph Matching over Streaming Graphs via Backtracking Reduction.** Proc. ACM Manag. Data 1(1): 15:1-15:26 (2023) [[paper]](https://doi.org/10.1145/3588695) [[code]](https://github.com/JackChuengQAQ/CaLiG) [[video]](https://dl.acm.org/action/downloadSupplement?doi=10.1145/3588695&file=meeting_09.mp4) `Exact` `Fully dynamic`
 
    *Rongjian Yang, Zhijie Zhang, Weiguo Zheng, Jeffrey Xu Yu.*
@@ -519,6 +484,10 @@ Surveys and Streaming Graph Partitioning carry no tags; Systems and Chapter 11 c
 1. **An In-Depth Study of Continuous Subgraph Matching.** Proc. VLDB Endow. 15(7): 1403-1416 (2022) [[paper]](https://www.vldb.org/pvldb/vol15/p1403-sun.pdf) [[code]](https://github.com/RapidsAtHKUST/ContinuousSubgraphMatching) `Exact` `Fully dynamic` `Benchmark`
 
    *Xibo Sun, Shixuan Sun, Qiong Luo, Bingsheng He.*
+
+1. **Mnemonic: A Parallel Subgraph Matching System for Streaming Graphs.** IPDPS 2022: 313-323 [[paper]](https://doi.org/10.1109/ipdps53621.2022.00038) `Exact` `Fully dynamic` `Sliding window`
+
+   *Bibek Bhattarai, H. Howie Huang.*
 
 1. **RapidFlow: An Efficient Approach to Continuous Subgraph Matching.** Proc. VLDB Endow. 15(11): 2415-2427 (2022) [[paper]](https://www.vldb.org/pvldb/vol15/p2415-sun.pdf) [[code]](https://github.com/shixuansun/RapidFlow) `Exact` `Fully dynamic`
 
@@ -580,17 +549,17 @@ Surveys and Streaming Graph Partitioning carry no tags; Systems and Chapter 11 c
 
    *Wenfei Fan, Jianzhong Li, Jizhou Luo, Zijing Tan, Xin Wang, Yinghui Wu.*
 
-1. **Continuous Subgraph Pattern Search over Certain and Uncertain Graph Streams.** IEEE Trans. Knowl. Data Eng. 22(8): 1093-1109 (2010) [[paper]](https://doi.org/10.1109/tkde.2010.67) `Exact` `Fully dynamic`
+1. **Continuous Subgraph Pattern Search over Certain and Uncertain Graph Streams.** IEEE Trans. Knowl. Data Eng. 22(8): 1093-1109 (2010) [[paper]](https://doi.org/10.1109/tkde.2010.67) `Approx` `Fully dynamic`
 
    *Lei Chen, Changliang Wang.*
 
-1. **Continuous Subgraph Pattern Search over Graph Streams.** ICDE 2009: 393-404 [[paper]](https://doi.org/10.1109/icde.2009.132) `Exact` `Fully dynamic`
+1. **Continuous Subgraph Pattern Search over Graph Streams.** ICDE 2009: 393-404 [[paper]](https://doi.org/10.1109/icde.2009.132) `Approx` `Fully dynamic`
 
    *Changliang Wang, Lei Chen.*
 
 ### [Regular Path Query](#content)
 
-1. **DRPQ: Distributed Evaluation of Regular Path Queries On Streaming Graphs.** Proc. ACM Manag. Data 3(6): 317:1-317:27 (2025) [[paper]](https://doi.org/10.1145/3769782) `Exact` `Sliding window`
+1. **DRPQ: Distributed Evaluation of Regular Path Queries On Streaming Graphs.** Proc. ACM Manag. Data 3(6): 317:1-317:27 (2025) [[paper]](https://doi.org/10.1145/3769782) `Exact` `Fully dynamic` `Sliding window`
 
    *Siyuan Zhang, Kai Zhang, Zhenying He, Yinan Jing, Zhigang Zhao, X. Sean Wang.*
 
@@ -598,7 +567,7 @@ Surveys and Streaming Graph Partitioning carry no tags; Systems and Chapter 11 c
 
    *Xiangyang Gou, Xinyi Ye, Lei Zou, Jeffrey Xu Yu.*
 
-1. **MWP: Multi-Window Parallel Evaluation of Regular Path Queries on Streaming Graphs.** Proc. ACM Manag. Data 2(1): 5:1-5:26 (2024) [[paper]](https://doi.org/10.1145/3639260) `Exact` `Sliding window`
+1. **MWP: Multi-Window Parallel Evaluation of Regular Path Queries on Streaming Graphs.** Proc. ACM Manag. Data 2(1): 5:1-5:26 (2024) [[paper]](https://doi.org/10.1145/3639260) `Exact` `Fully dynamic` `Sliding window`
 
    *Siyuan Zhang, Zhenying He, Yinan Jing, Kai Zhang, X. Sean Wang.*
 
@@ -610,7 +579,7 @@ Surveys and Streaming Graph Partitioning carry no tags; Systems and Chapter 11 c
 
    *Anil Pacaci, Angela Bonifati, M. Tamer Özsu.*
 
-1. **Regular Path Query Evaluation on Streaming Graphs.** SIGMOD Conference 2020: 1415-1430 [[paper]](https://doi.org/10.1145/3318464.3389733) [[video]](https://dl.acm.org/doi/10.1145/3318464.3389733#sec-supp) `Exact` `Sliding window` `Fully dynamic`
+1. **Regular Path Query Evaluation on Streaming Graphs.** SIGMOD Conference 2020: 1415-1430 [[paper]](https://doi.org/10.1145/3318464.3389733) [[video]](https://dl.acm.org/doi/10.1145/3318464.3389733#sec-supp) `Exact` `Fully dynamic` `Sliding window`
 
    *Anil Pacaci, Angela Bonifati, M. Tamer Özsu.*
 
@@ -650,10 +619,6 @@ Surveys and Streaming Graph Partitioning carry no tags; Systems and Chapter 11 c
 
    *Qingshuai Feng, You Peng, Wenjie Zhang, Xuemin Lin, Ying Zhang.*
 
-1. **Stream Processing of Shortest Path Query in Dynamic Road Networks.** IEEE Trans. Knowl. Data Eng. 34(5): 2458-2471 (2022) [[paper]](https://doi.org/10.1109/tkde.2020.3010005) `Approx` `Fully dynamic`
-
-   *Mengxuan Zhang, Lei Li, Wen Hua, Xiaofang Zhou.*
-
 1. **Towards Real-Time Counting Shortest Cycles on Dynamic Graphs: A Hub Labeling Approach.** ICDE 2022: 512-524 [[paper]](https://doi.org/10.1109/icde53745.2022.00043) `Exact` `Fully dynamic`
 
    *Qingshuai Feng, You Peng, Wenjie Zhang, Ying Zhang, Xuemin Lin.*
@@ -688,13 +653,21 @@ Surveys and Streaming Graph Partitioning carry no tags; Systems and Chapter 11 c
 
    *Qing Chen, Michael H. Böhlen, Sven Helmer.*
 
+1. **Exploring the Landscape of Distributed Graph Sketching.** ALENEX 2025: 133-146 [[paper]](https://doi.org/10.1137/1.9781611978339.11) `Exact` `Fully dynamic`
+
+   *David Tench, Evan T. West, Kenny Zhang, Michael A. Bender, Daniel DeLayo, Martín Farach-Colton, Gilvir Gill, Tyler Seip, Victor Zhang.*
+
 1. **The Case for External Graph Sketching.** ACDA 2025: 115-129 [[paper]](https://doi.org/10.1137/1.9781611979084.9) `Exact` `Fully dynamic`
 
    *Michael A. Bender, Martín Farach-Colton, Riko Jacob, Hanna Komlós, David Tench, Evan T. West.*
 
-1. **Constant-time Connectivity Querying in Dynamic Graphs.** Proc. ACM Manag. Data 2(6): 230:1-230:23 (2024) [[paper]](https://doi.org/10.1145/3698805) `Exact` `Fully dynamic`
+1. **Constant-time Connectivity Querying in Dynamic Graphs.** Proc. ACM Manag. Data 2(6): 230:1-230:23 (2024) [[paper]](https://doi.org/10.1145/3698805) `Exact` `Fully dynamic` `Sliding window`
 
    *Lantian Xu, Dong Wen, Lu Qin, Rong-Hua Li, Ying Zhang, Xuemin Lin.*
+
+1. **GraphZeppelin: How to Find Connected Components (Even When Graphs Are Dense, Dynamic, and Massive).** ACM Trans. Database Syst. 49(3): 9:1-9:31 (2024) [[paper]](https://doi.org/10.1145/3643846) `Exact` `Fully dynamic`
+
+   *David Tench, Evan T. West, Victor Zhang, Michael A. Bender, Abiyaz Chowdhury, Daniel DeLayo, J. Ahmed Dellas, Martín Farach-Colton, Tyler Seip, Kenny Zhang.*
 
 1. **Incremental Sliding Window Connectivity over Streaming Graphs.** Proc. VLDB Endow. 17(10): 2473-2486 (2024) [[paper]](https://www.vldb.org/pvldb/vol17/p2473-zhang.pdf) [[code]](https://github.com/chaozhang-cs/bic) `Exact` `Sliding window`
 
@@ -711,6 +684,10 @@ Surveys and Streaming Graph Partitioning carry no tags; Systems and Chapter 11 c
 1. **Dynamic spanning trees for connectivity queries on fully-dynamic undirected graphs.** Proc. VLDB Endow. 15(11): 3263-3276 (2022) [[paper]](https://www.vldb.org/pvldb/vol15/p3263-chen.pdf) [[code]](https://github.com/qingchen3/D-tree) `Exact` `Fully dynamic`
 
    *Qing Chen, Oded Lachish, Sven Helmer, Michael H. Böhlen.*
+
+1. **GraphZeppelin: Storage-Friendly Sketching for Connected Components on Dynamic Graph Streams.** SIGMOD Conference 2022: 325-339 [[paper]](https://doi.org/10.1145/3514221.3526146) `Exact` `Fully dynamic`
+
+   *David Tench, Evan T. West, Victor Zhang, Michael A. Bender, Abiyaz Chowdhury, J. Ahmed Dellas, Martín Farach-Colton, Tyler Seip, Kenny Zhang.*
 
 ## [Subgraph Counting & Mining](#content)
 
@@ -740,7 +717,7 @@ Surveys and Streaming Graph Partitioning carry no tags; Systems and Chapter 11 c
 
    *Wei Xuan, Yan Liang, Huawei Cao, Ning Lin, Xiaochun Ye, Dongrui Fan.*
 
-1. **Fast and Accurate Triangle Counting in Graph Streams Using Predictions.** ICDM 2024: 31-40 [[paper]](https://doi.org/10.1109/ICDM59182.2024.00010) [[code]](https://github.com/VandinLab/Tonic) `Approx` `Insert-only`
+1. **Fast and Accurate Triangle Counting in Graph Streams Using Predictions.** ICDM 2024: 31-40 [[paper]](https://doi.org/10.1109/ICDM59182.2024.00010) [[code]](https://github.com/VandinLab/Tonic) `Approx` `Fully dynamic`
 
    *Cristian Boldrin, Fabio Vandin.*
 
@@ -874,7 +851,7 @@ Surveys and Streaming Graph Partitioning carry no tags; Systems and Chapter 11 c
 
    *Rundong Li, Pinghui Wang, Peng Jia, Xiangliang Zhang, Junzhou Zhao, Jing Tao, Ye Yuan, Xiaohong Guan.*
 
-1. **sGrapp: Butterfly Approximation in Streaming Graphs.** ACM Trans. Knowl. Discov. Data 16(4): 76:1-76:43 (2022) [[paper]](https://doi.org/10.1145/3495011) [[code]](https://github.com/dsg-uwaterloo/s-graffito/blob/master/files/sGrapp_artifacts.zip) `Approx` `Sliding window`
+1. **sGrapp: Butterfly Approximation in Streaming Graphs.** ACM Trans. Knowl. Discov. Data 16(4): 76:1-76:43 (2022) [[paper]](https://doi.org/10.1145/3495011) [[code]](https://github.com/dsg-uwaterloo/s-graffito/blob/master/files/sGrapp_artifacts.zip) `Approx` `Insert-only`
 
    *Aida Sheshbolouki, M. Tamer Özsu.*
 
@@ -904,11 +881,15 @@ Surveys and Streaming Graph Partitioning carry no tags; Systems and Chapter 11 c
 
    *Chen Yang, Lailong Luo, Yuliang Lu, Chu Huang, Qianzhen Zhang, Guozheng Yang, Deke Guo.*
 
+1. **PSMiner: A Pattern-Aware Accelerator for High-Performance Streaming Graph Pattern Mining.** DAC 2023: 1-6 [[paper]](https://doi.org/10.1109/dac56929.2023.10247902) `Exact` `Insert-only`
+
+   *Hao Qi, Yu Zhang, Ligang He, Kang Luo, Jun Huang, Haoyu Lu, Jin Zhao, Hai Jin.*
+
 1. **Reinforcement Learning Enhanced Weighted Sampling for Accurate Subgraph Counting on Fully Dynamic Graph Streams.** ICDE 2023: 1084-1097 [[paper]](https://doi.org/10.1109/ICDE55515.2023.00088) [[code]](https://github.com/wangkaixin219/WSD) `Approx` `Fully dynamic`
 
    *Kaixin Wang, Cheng Long, Da Yan, Jie Zhang, H. V. Jagadish.*
 
-1. **Efficient Sampling Algorithms for Approximate Temporal Motif Counting.** CIKM 2020: 1505-1514 [[paper]](https://doi.org/10.1145/3340531.3411862) `Approx` `Insert-only`
+1. **Efficient Sampling Algorithms for Approximate Motif Counting in Temporal Graph Streams.** CoRR abs/2211.12101 (2022) [[paper]](https://arxiv.org/abs/2211.12101) `Approx` `Insert-only`
 
    *Jingjing Wang, Yanhao Wang, Wenjun Jiang, Yuchen Li, Kian-Lee Tan.*
 
@@ -934,11 +915,19 @@ Surveys and Streaming Graph Partitioning carry no tags; Systems and Chapter 11 c
 
    *Çiğdem Aslay, Muhammad Anis Uddin Nasir, Gianmarco De Francisci Morales, Aristides Gionis.*
 
+1. **On dense pattern mining in graph streams.** Proc. VLDB Endow. 3(1-2): 975-984 (2010) [[paper]](https://www.vldb.org/pvldb/vol3/R87.pdf) `Approx` `Insert-only`
+
+   *Charu C. Aggarwal, Yao Li, Philip S. Yu, Ruoming Jin.*
+
 ### [Cycle, Clique & Biclique](#content)
 
 1. **Maximal η-clique maintenance over uncertain graph streams.** Inf. Sci. 717: 122318 (2025) [[paper]](https://doi.org/10.1016/j.ins.2025.122318) [[code]](https://github.com/paopao-E/Maximal--clique-Maintenance) `Exact` `Fully dynamic`
 
    *Ziyi Ma, Liqing Wang, Jianye Yang, Xu Zhou, Kenli Li, Cuiyun Gao.*
+
+1. **TopK-BC: Efficient Maintenance of Top k (p,q)-bicliques over Streaming Bipartite Graphs.** ICDE 2025: 3696-3709 [[paper]](https://doi.org/10.1109/icde65448.2025.00276) `Exact` `Sliding window`
+
+   *Xin Deng, Zheng Qin, Peng Peng, Hui Zhou.*
 
 1. **Efficient maintenance for maximal bicliques in bipartite graph streams.** World Wide Web 25(2): 857-877 (2022) [[paper]](https://doi.org/10.1007/s11280-021-00927-x) `Exact` `Fully dynamic`
 
@@ -1018,10 +1007,6 @@ Surveys and Streaming Graph Partitioning carry no tags; Systems and Chapter 11 c
 
    *Slobodan Mitrovic, Theodore Pan, Mahdi Qaempanah, Mohammad Amin Raeisi.*
 
-1. **TopK-BC: Efficient Maintenance of Top k (p,q)-bicliques over Streaming Bipartite Graphs.** ICDE 2025: 3696-3709 [[paper]](https://doi.org/10.1109/icde65448.2025.00276) `Exact` `Sliding window`
-
-   *Xin Deng, Zheng Qin, Peng Peng, Hui Zhou.*
-
 1. **Approximate Anchored Densest Subgraph Search on Large Static and Dynamic Graphs.** Proc. VLDB Endow. 18(3): 623-636 (2024) [[paper]](https://www.vldb.org/pvldb/vol18/p623-li.pdf) [[code]](https://github.com/qizhang1996/aads) `Approx` `Fully dynamic`
 
    *Qi Zhang, Yalong Zhang, Rong-Hua Li, Guoren Wang.*
@@ -1037,10 +1022,6 @@ Surveys and Streaming Graph Partitioning carry no tags; Systems and Chapter 11 c
 1. **Spade: A Real-Time Fraud Detection Framework on Evolving Graphs.** Proc. VLDB Endow. 16(3): 461-469 (2022) [[paper]](https://www.vldb.org/pvldb/vol16/p461-jiang.pdf) [[code]](https://github.com/samjjx/Spade) `Approx` `Insert-only`
 
    *Jiaxin Jiang, Yuan Li, Bingsheng He, Bryan Hooi, Jia Chen, Johan Kok Zhi Kang.*
-
-1. **On dense pattern mining in graph streams.** Proc. VLDB Endow. 3(1-2): 975-984 (2010) [[paper]](https://www.vldb.org/pvldb/vol3/R87.pdf) `Approx` `Insert-only`
-
-   *Charu C. Aggarwal, Yao Li, Philip S. Yu, Ruoming Jin.*
 
 ### [Community Detection](#content)
 
@@ -1066,13 +1047,9 @@ Surveys and Streaming Graph Partitioning carry no tags; Systems and Chapter 11 c
 
 ### [Community Search](#content)
 
-1. **Finding Time-Proximity Communities in Temporal Heterogeneous Information Networks.** Proc. VLDB Endow. 18(13): 5740-5752 (2025) [[paper]](https://www.vldb.org/pvldb/vol18/p5740-tang.pdf) [[code]](https://github.com/Craig-Tang/THCS) `Exact` `Sliding window`
+1. **Finding Time-Proximity Communities in Temporal Heterogeneous Information Networks.** Proc. VLDB Endow. 18(13): 5740-5752 (2025) [[paper]](https://www.vldb.org/pvldb/vol18/p5740-tang.pdf) [[code]](https://github.com/Craig-Tang/THCS) `Exact` `Insert-only`
 
    *Yifu Tang, Chengfei Liu, Lu Chen, Rui Zhou, Jianxin Li.*
-
-1. **Reliability-Driven Local Community Search in Dynamic Networks.** IEEE Trans. Knowl. Data Eng. 36(2): 809-822 (2024) [[paper]](https://doi.org/10.1109/tkde.2023.3290295) `Exact` `Fully dynamic`
-
-   *Yifu Tang, Jianxin Li, Nur Al Hasan Haldar, Ziyu Guan, Jiajie Xu, Chengfei Liu.*
 
 1. **Scalable Community Search over Large-scale Graphs based on Graph Transformer.** SIGIR 2024: 1680-1690 [[paper]](https://doi.org/10.1145/3626772.3657771) `Approx` `Fully dynamic`
 
@@ -1090,13 +1067,17 @@ Surveys and Streaming Graph Partitioning carry no tags; Systems and Chapter 11 c
 
    *Aman Abidi, Lu Chen, Rui Zhou, Chengfei Liu.*
 
+1. **Reliable Community Search in Dynamic Networks.** Proc. VLDB Endow. 15(11): 2826-2838 (2022) [[paper]](https://www.vldb.org/pvldb/vol15/p2826-li.pdf) [[code]](https://github.com/Cyril-Tang/CRC-query) `Exact` `Fully dynamic`
+
+   *Yifu Tang, Jianxin Li, Nur Al Hasan Haldar, Ziyu Guan, Jiajie Xu, Chengfei Liu.*
+
 ### [Graph Clustering](#content)
 
 1. **Efficient processing of streaming graphs for evolution-aware clustering.** CIKM 2013: 319-328 [[paper]](https://doi.org/10.1145/2505515.2505750) `Approx` `Fully dynamic` `Sliding window`
 
    *Mindi Yuan, Kun-Lung Wu, Gabriela Jacques-Silva, Yi Lu.*
 
-1. **Clustering Streaming Graphs.** ICDCS 2012: 466-475 [[paper]](https://doi.org/10.1109/icdcs.2012.20) `Approx` `Fully dynamic`
+1. **Clustering Streaming Graphs.** ICDCS 2012: 466-475 [[paper]](https://doi.org/10.1109/icdcs.2012.20) `Approx` `Fully dynamic` `Sliding window`
 
    *Ahmed Eldawy, Rohit Khandekar, Kun-Lung Wu.*
 
@@ -1118,7 +1099,7 @@ Surveys and Streaming Graph Partitioning carry no tags; Systems and Chapter 11 c
 
    *Jiadong Xie, Zehua Chen, Deming Chu, Fan Zhang, Xuemin Lin, Zhihong Tian.*
 
-1. **Querying Structural Diversity in Streaming Graphs.** Proc. VLDB Endow. 17(5): 1034-1046 (2024) [[paper]](https://www.vldb.org/pvldb/vol17/p1034-wen.pdf) [[code]](https://github.com/kevinChnn/structural-diversity-queries) `Exact` `Sliding window`
+1. **Querying Structural Diversity in Streaming Graphs.** Proc. VLDB Endow. 17(5): 1034-1046 (2024) [[paper]](https://www.vldb.org/pvldb/vol17/p1034-wen.pdf) [[code]](https://github.com/kevinChnn/structural-diversity-queries) `Exact` `Insert-only` `Sliding window`
 
    *Kaiyu Chen, Dong Wen, Wenjie Zhang, Ying Zhang, Xiaoyang Wang, Xuemin Lin.*
 
@@ -1130,6 +1111,10 @@ Surveys and Streaming Graph Partitioning carry no tags; Systems and Chapter 11 c
 
    *Peng Jia, Pinghui Wang, Jing Tao, Xiaohong Guan.*
 
+1. **Sampling for Approximate Bipartite Network Projection.** IJCAI 2018: 3286-3292 [[paper]](https://doi.org/10.24963/ijcai.2018/456) `Approx` `Insert-only`
+
+   *Nesreen K. Ahmed, Nick Duffield, Liangzhen Xia.*
+
 1. **Fully dynamic betweenness centrality maintenance on massive networks.** Proc. VLDB Endow. 9(2): 48-59 (2015) [[paper]](https://www.vldb.org/pvldb/vol9/p48-hayashi.pdf) `Approx` `Fully dynamic`
 
    *Takanori Hayashi, Takuya Akiba, Yuichi Yoshida.*
@@ -1138,7 +1123,7 @@ Surveys and Streaming Graph Partitioning carry no tags; Systems and Chapter 11 c
 
 ### [Anomaly Detection](#content)
 
-1. **Anomaly Detection of Interaction Behaviors in Streaming Graphs.** WWW 2026: 879-890 [[paper]](https://doi.org/10.1145/3774904.3792282) `Approx` `Insert-only`
+1. **Anomaly Detection of Interaction Behaviors in Streaming Graphs.** WWW 2026: 879-890 [[paper]](https://doi.org/10.1145/3774904.3792282) `Approx` `Fully dynamic`
 
    *Shuai Ren, Fan Zhang, Bolin Wang, Xiang Zhao, Zhihong Tian.*
 
@@ -1166,7 +1151,7 @@ Surveys and Streaming Graph Partitioning carry no tags; Systems and Chapter 11 c
 
    *Siddharth Bhatia, Mohit Wadhwa, Kenji Kawaguchi, Neil Shah, Philip S. Yu, Bryan Hooi.*
 
-1. **MonLAD: Money Laundering Agents Detection in Transaction Streams.** WSDM 2022: 976-986 [[paper]](https://doi.org/10.1145/3488560.3498418) `Approx` `Insert-only` `Sliding window`
+1. **MonLAD: Money Laundering Agents Detection in Transaction Streams.** WSDM 2022: 976-986 [[paper]](https://doi.org/10.1145/3488560.3498418) [[code]](https://github.com/BGT-M/MonLAD) `Approx` `Insert-only` `Sliding window`
 
    *Xiaobing Sun, Wenjie Feng, Shenghua Liu, Yuyang Xie, Siddharth Bhatia, Bryan Hooi, Wenhan Wang, Xueqi Cheng.*
 
@@ -1174,7 +1159,7 @@ Surveys and Streaming Graph Partitioning carry no tags; Systems and Chapter 11 c
 
    *Siddharth Bhatia, Rui Liu, Bryan Hooi, Minji Yoon, Kijung Shin, Christos Faloutsos.*
 
-1. **F-FADE: Frequency Factorization for Anomaly Detection in Edge Streams.** WSDM 2021: 589-597 [[paper]](https://doi.org/10.1145/3437963.3441806) `Approx` `Insert-only`
+1. **F-FADE: Frequency Factorization for Anomaly Detection in Edge Streams.** WSDM 2021: 589-597 [[paper]](https://doi.org/10.1145/3437963.3441806) [[code]](https://github.com/snap-stanford/F-FADE) `Approx` `Insert-only`
 
    *Yen-Yu Chang, Pan Li, Rok Sosic, M. H. Afifi, Marco Schweighauser, Jure Leskovec.*
 
@@ -1182,11 +1167,11 @@ Surveys and Streaming Graph Partitioning carry no tags; Systems and Chapter 11 c
 
    *Siddharth Bhatia, Bryan Hooi, Minji Yoon, Kijung Shin, Christos Faloutsos.*
 
-1. **Fast and Accurate Anomaly Detection in Dynamic Graphs with a Two-Pronged Approach.** KDD 2019: 647-657 [[paper]](https://doi.org/10.1145/3292500.3330946) `Approx` `Fully dynamic`
+1. **Fast and Accurate Anomaly Detection in Dynamic Graphs with a Two-Pronged Approach.** KDD 2019: 647-657 [[paper]](https://doi.org/10.1145/3292500.3330946) [[code]](https://github.com/minjiyoon/anomrank) `Approx` `Fully dynamic`
 
    *Minji Yoon, Bryan Hooi, Kijung Shin, Christos Faloutsos.*
 
-1. **SedanSpot: Detecting Anomalies in Edge Streams.** ICDM 2018: 953-958 [[paper]](https://doi.org/10.1109/icdm.2018.00117) `Approx` `Insert-only`
+1. **SedanSpot: Detecting Anomalies in Edge Streams.** ICDM 2018: 953-958 [[paper]](https://doi.org/10.1109/icdm.2018.00117) [[code]](https://github.com/dhivyaeswaran/sedanspot) `Approx` `Insert-only`
 
    *Dhivya Eswaran, Christos Faloutsos.*
 
@@ -1208,7 +1193,7 @@ Surveys and Streaming Graph Partitioning carry no tags; Systems and Chapter 11 c
 
 ### [Burst & Event Detection](#content)
 
-1. **RUSH: Real-Time Burst Subgraph Detection in Dynamic Graphs.** Proc. VLDB Endow. 17(11): 3657-3665 (2024) [[paper]](https://www.vldb.org/pvldb/vol17/p3657-chen.pdf) [[code]](https://github.com/Xtra-Computing/RUSH) `Approx` `Fully dynamic`
+1. **RUSH: Real-Time Burst Subgraph Detection in Dynamic Graphs.** Proc. VLDB Endow. 17(11): 3657-3665 (2024) [[paper]](https://www.vldb.org/pvldb/vol17/p3657-chen.pdf) [[code]](https://github.com/Xtra-Computing/RUSH) `Approx` `Insert-only`
 
    *Yuhang Chen, Jiaxin Jiang, Shixuan Sun, Bingsheng He, Min Chen.*
 
@@ -1226,11 +1211,11 @@ Surveys and Streaming Graph Partitioning carry no tags; Systems and Chapter 11 c
 
 ### [Concept Drift](#content)
 
-1. **An Approach For Concept Drift Detection in a Graph Stream Using Discriminative Subgraphs.** ACM Trans. Knowl. Discov. Data 14(6): 70:1-70:25 (2020) [[paper]](https://doi.org/10.1145/3406243) `Approx` `Sliding window`
+1. **An Approach For Concept Drift Detection in a Graph Stream Using Discriminative Subgraphs.** ACM Trans. Knowl. Discov. Data 14(6): 70:1-70:25 (2020) [[paper]](https://doi.org/10.1145/3406243) [[code]](https://github.com/rpaudel42/ds_dd) `Approx` `Sliding window`
 
    *Ramesh Paudel, William Eberle.*
 
-1. **Concept Drift and Anomaly Detection in Graph Streams.** IEEE Trans. Neural Networks Learn. Syst. 29(11): 5592-5605 (2018) [[paper]](https://doi.org/10.1109/tnnls.2018.2804443) `Snapshots`
+1. **Concept Drift and Anomaly Detection in Graph Streams.** IEEE Trans. Neural Networks Learn. Syst. 29(11): 5592-5605 (2018) [[paper]](https://doi.org/10.1109/tnnls.2018.2804443) `Approx` `Insert-only`
 
    *Daniele Zambon, Cesare Alippi, Lorenzo Livi.*
 
@@ -1250,9 +1235,21 @@ Surveys and Streaming Graph Partitioning carry no tags; Systems and Chapter 11 c
 
    *Dan Wu, Zhaoying Li, Tulika Mitra.*
 
-1. **Reducing Resource Usage for Continuous Model Updating and Predictive Query Answering in Graph Streams.** ICDE 2024: 2653-2666 [[paper]](https://doi.org/10.1109/icde60146.2024.00208) `Insert-only`
+1. **Ripple: Scalable Incremental GNN Inferencing on Large Streaming Graphs.** ICDCS 2025: 857-867 [[paper]](https://doi.org/10.1109/icdcs63083.2025.00088) `Fully dynamic`
+
+   *Pranjal Naman, Yogesh Simmhan.*
+
+1. **D3-GNN: Dynamic Distributed Dataflow for Streaming Graph Neural Networks.** Proc. VLDB Endow. 17(11): 2764-2777 (2024) [[paper]](https://www.vldb.org/pvldb/vol17/p2764-guliyev.pdf) [[code]](https://github.com/Rustam-Warwick/d3-gnn) `Fully dynamic`
+
+   *Rustam Guliyev, Aparajita Haldar, Hakan Ferhatosmanoglu.*
+
+1. **Reducing Resource Usage for Continuous Model Updating and Predictive Query Answering in Graph Streams.** ICDE 2024: 2653-2666 [[paper]](https://doi.org/10.1109/icde60146.2024.00208) `Snapshots`
 
    *Qu Liu, Adam King, Tingjian Ge.*
+
+1. **NeutronStream: A Dynamic GNN Training Framework with Sliding Window for Graph Streams.** Proc. VLDB Endow. 17(3): 455-468 (2023) [[paper]](https://www.vldb.org/pvldb/vol17/p455-chen.pdf) [[code]](https://github.com/iDC-NEU/NeutronStream) `Insert-only`
+
+   *Chaoyi Chen, Dechao Gao, Yanfeng Zhang, Qiange Wang, Zhenbo Fu, Xuecang Zhang, Junhua Zhu, Yu Gu, Ge Yu.*
 
 1. **Streaming Graph Embeddings via Incremental Neighborhood Sketching.** IEEE Trans. Knowl. Data Eng. 35(5): 5296-5310 (2023) [[paper]](https://doi.org/10.1109/tkde.2022.3149999) `Insert-only`
 
@@ -1265,6 +1262,10 @@ Surveys and Streaming Graph Partitioning carry no tags; Systems and Chapter 11 c
 1. **Streaming Graph Neural Networks with Generative Replay.** KDD 2022: 1878-1888 [[paper]](https://doi.org/10.1145/3534678.3539336) [[code]](https://github.com/Junshan-Wang/SGNN-GR) `Snapshots`
 
    *Junshan Wang, Wenhao Zhu, Guojie Song, Liang Wang.*
+
+1. **T-GCN: A Sampling Based Streaming Graph Neural Network System with Hybrid Architecture.** PACT 2022: 69-82 [[paper]](https://doi.org/10.1145/3559009.3569648) `Insert-only`
+
+   *Chengying Huan, Shuaiwen Leon Song, Yongchao Liu, Heng Zhang, Hang Liu, Charles He, Kang Chen, Jinlei Jiang, Yongwei Wu.*
 
 1. **Streaming Dynamic Graph Neural Networks for Continuous-Time Temporal Graph Modeling.** ICDM 2021: 1361-1366 [[paper]](https://doi.org/10.1109/icdm51629.2021.00171) `Insert-only`
 
@@ -1292,7 +1293,7 @@ Surveys and Streaming Graph Partitioning carry no tags; Systems and Chapter 11 c
 
    *Yilun Liu, Ruihong Qiu, Zi Huang.*
 
-1. **On Supervised Change Detection in Graph Streams.** SDM 2020: 289-297 [[paper]](https://doi.org/10.1137/1.9781611976236.33) `Insert-only`
+1. **On Supervised Change Detection in Graph Streams.** SDM 2020: 289-297 [[paper]](https://doi.org/10.1137/1.9781611976236.33) `Sliding window`
 
    *Charu C. Aggarwal, Yao Li, Philip S. Yu.*
 
@@ -1334,7 +1335,7 @@ Surveys and Streaming Graph Partitioning carry no tags; Systems and Chapter 11 c
 
    *Bowen Dong, Charu C. Aggarwal, Philip S. Yu.*
 
-1. **Streaming Link Prediction on Dynamic Attributed Networks.** WSDM 2018: 369-377 [[paper]](https://doi.org/10.1145/3159652.3159674) `Fully dynamic`
+1. **Streaming Link Prediction on Dynamic Attributed Networks.** WSDM 2018: 369-377 [[paper]](https://doi.org/10.1145/3159652.3159674) `Insert-only`
 
    *Jundong Li, Kewei Cheng, Liang Wu, Huan Liu.*
 
