@@ -843,10 +843,6 @@ Each paper entry ends with tags:
 
    *Xin-Wei Cai, Xiangyu Ke, Kai Wang, Lu Chen, Tianming Zhang, Qing Liu, Yunjun Gao.*
 
-1. **Accelerated butterfly counting with vertex priority on bipartite graphs.** VLDB J. 32(2): 257-281 (2023) [[paper]](https://doi.org/10.1007/s00778-022-00746-0) `Exact` `Fully dynamic`
-
-   *Kai Wang, Xuemin Lin, Lu Qin, Wenjie Zhang, Ying Zhang.*
-
 1. **Approximately Counting Butterflies in Large Bipartite Graph Streams.** IEEE Trans. Knowl. Data Eng. 34(12): 5621-5635 (2022) [[paper]](https://doi.org/10.1109/tkde.2021.3062987) `Approx` `Insert-only`
 
    *Rundong Li, Pinghui Wang, Peng Jia, Xiangliang Zhang, Junzhou Zhao, Jing Tao, Ye Yuan, Xiaohong Guan.*
@@ -953,10 +949,6 @@ Each paper entry ends with tags:
 
    *Jie Dai, Yixiao Liu, Yuan Li, Fazal Wahab, Yuhai Zhao.*
 
-1. **Efficient Index for Temporal Core Queries over Bipartite Graphs.** Proc. VLDB Endow. 17(11): 2813-2825 (2024) [[paper]](https://www.vldb.org/pvldb/vol17/p2813-tian.pdf) [[code]](https://github.com/ExpCodeBase/tabc) `Exact` `Sliding window`
-
-   *Anxin Tian, Alexander Zhou, Yue Wang, Xun Jian, Lei Chen.*
-
 1. **Maintaining Top-t Cores in Dynamic Graphs.** IEEE Trans. Knowl. Data Eng. 36(9): 4766-4780 (2024) [[paper]](https://doi.org/10.1109/tkde.2023.3332638) `Exact` `Fully dynamic`
 
    *Yikai Zhang, Jeffrey Xu Yu, Ying Zhang, Lu Qin.*
@@ -1050,10 +1042,6 @@ Each paper entry ends with tags:
 1. **Finding Time-Proximity Communities in Temporal Heterogeneous Information Networks.** Proc. VLDB Endow. 18(13): 5740-5752 (2025) [[paper]](https://www.vldb.org/pvldb/vol18/p5740-tang.pdf) [[code]](https://github.com/Craig-Tang/THCS) `Exact` `Insert-only`
 
    *Yifu Tang, Chengfei Liu, Lu Chen, Rui Zhou, Jianxin Li.*
-
-1. **Scalable Community Search over Large-scale Graphs based on Graph Transformer.** SIGIR 2024: 1680-1690 [[paper]](https://doi.org/10.1145/3626772.3657771) `Approx` `Fully dynamic`
-
-   *Yuxiang Wang, Xiaoxuan Gou, Xiaoliang Xu, Yuxia Geng, Xiangyu Ke, Tianxing Wu, Zhiyuan Yu, Runhuai Chen, Xiangying Wu.*
 
 1. **Truss-Based Community Search over Streaming Directed Graphs.** Proc. VLDB Endow. 17(8): 1816-1829 (2024) [[paper]](https://www.vldb.org/pvldb/vol17/p1816-xu.pdf) `Exact` `Sliding window`
 
