@@ -40,8 +40,20 @@ Must-read papers on streaming graphs
 
 Each paper entry ends with tags:
 
-- **Result**: `Exact` means the method returns the exact answer to the problem as defined; randomized methods that are exact with high probability, such as connectivity sketches, also count as `Exact`. `Approx` means it returns an estimate or an approximation (sketching, sampling, heuristics, learned estimators). Neural-network detectors in Section 10.1, and papers in Section 11, carry no result tag.
-- **Data model**: `Insert-only` means edges (or graphs) only arrive. `Fully dynamic` means edges can be both inserted and deleted; edge-weight increases and decreases, as in dynamic road networks, also count. `Sliding window` means only edges within a recent time or count window are valid, and older edges expire. `Snapshots` means the input is a sequence of graph snapshots.
+- **Result**
+  - `Exact`: Returns the exact answer to the problem as defined, including randomized methods that do so with high probability (e.g., connectivity sketches).
+  - `Approx`: Returns an estimate or approximation (sketching, sampling, heuristics, or learned estimators).
+  - *Note:* Neural-network detectors in Section 10.1 and papers in Section 11 carry no result tag.
+- **Data model** *(tags from the two groups below can be combined)*
+  - **Updates**
+    - `Insert-only`: Edges (or graphs) only arrive, with no deletions.
+    - `Fully dynamic`: Edges can be both inserted and deleted; edge-weight increases and decreases (as in dynamic road networks) also count.
+  - **Arrival**
+    - `Sliding window`: Only edges within a recent time or count window are valid while older edges expire; expiration is not deletion.
+    - `Snapshots`: The input is a sequence of graph snapshots.
+    - *Default:* Without either tag, updates arrive one by one as an edge stream.
+
+> **Edge cases:** A paper may carry both `Insert-only` and `Fully dynamic` when it presents a separate method for each model. A `Snapshots` paper may omit the update tag when it does not specify whether edges are deleted between snapshots.
 
 ## [Keynotes](#content)
 
@@ -109,7 +121,7 @@ Each paper entry ends with tags:
 
    *Hao Qi, Yiyang Wu, Ligang He, Yu Zhang, Kang Luo, Minzhi Cai, Hai Jin, Zhan Zhang, Jin Zhao.*
 
-1. **PDG: A Prefetcher for Dynamic Graph Updating.** IEEE Trans. Comput. Aided Des. Integr. Circuits Syst. 43(4): 1246-1259 (2024) [[paper]](https://doi.org/10.1109/tcad.2023.3335880) `Fully dynamic`
+1. **PDG: A Prefetcher for Dynamic Graph Updating.** IEEE Trans. Comput. Aided Des. Integr. Circuits Syst. 43(4): 1246-1259 (2024) [[paper]](https://doi.org/10.1109/tcad.2023.3335880) `Insert-only`
 
    *Xinmiao Zhang, Cheng Liu, Jiacheng Ni, Yuanqing Cheng, Lei Zhang, Huawei Li, Xiaowei Li.*
 
@@ -505,7 +517,7 @@ Each paper entry ends with tags:
 
    *Seunghwan Min, Sung Gwan Park, Kunsoo Park, Dora Giammarresi, Giuseppe F. Italiano, Wook-Shin Han.*
 
-1. **Efficient Continuous Multi-Query Processing over Graph Streams.** EDBT 2020: 13-24 [[paper]](https://doi.org/10.5441/002/edbt.2020.03) `Exact` `Fully dynamic`
+1. **Efficient Continuous Multi-Query Processing over Graph Streams.** EDBT 2020: 13-24 [[paper]](https://doi.org/10.5441/002/edbt.2020.03) `Exact` `Insert-only`
 
    *Lefteris Zervakis, Vinay Setty, Christos Tryfonopoulos, Katja Hose.*
 
@@ -965,7 +977,7 @@ Each paper entry ends with tags:
 
    *Tongfeng Weng, Xu Zhou, Kenli Li, Kian-Lee Tan, Keqin Li.*
 
-1. **Incremental Graph Computation: Anchored Vertex Tracking in Dynamic Social Networks.** IEEE Trans. Knowl. Data Eng. 35(7): 7030-7044 (2023) [[paper]](https://doi.org/10.1109/tkde.2022.3199494) `Approx` `Snapshots`
+1. **Incremental Graph Computation: Anchored Vertex Tracking in Dynamic Social Networks.** IEEE Trans. Knowl. Data Eng. 35(7): 7030-7044 (2023) [[paper]](https://doi.org/10.1109/tkde.2022.3199494) `Approx` `Fully dynamic` `Snapshots`
 
    *Taotao Cai, Shuiqiao Yang, Jianxin Li, Quan Z. Sheng, Jian Yang, Xin Wang, Wei Emma Zhang, Longxiang Gao.*
 
@@ -1055,7 +1067,7 @@ Each paper entry ends with tags:
 
    *Aman Abidi, Lu Chen, Rui Zhou, Chengfei Liu.*
 
-1. **Reliable Community Search in Dynamic Networks.** Proc. VLDB Endow. 15(11): 2826-2838 (2022) [[paper]](https://www.vldb.org/pvldb/vol15/p2826-li.pdf) [[code]](https://github.com/Cyril-Tang/CRC-query) `Exact` `Fully dynamic`
+1. **Reliable Community Search in Dynamic Networks.** Proc. VLDB Endow. 15(11): 2826-2838 (2022) [[paper]](https://www.vldb.org/pvldb/vol15/p2826-li.pdf) [[code]](https://github.com/Cyril-Tang/CRC-query) `Exact` `Fully dynamic` `Snapshots`
 
    *Yifu Tang, Jianxin Li, Nur Al Hasan Haldar, Ziyu Guan, Jiajie Xu, Chengfei Liu.*
 
@@ -1115,7 +1127,7 @@ Each paper entry ends with tags:
 
    *Shuai Ren, Fan Zhang, Bolin Wang, Xiang Zhao, Zhihong Tian.*
 
-1. **STG-DGR: Fraud Detection on Streaming Transaction Graphs with Diffusion-based Generative Replay.** WWW 2026: 742-753 [[paper]](https://doi.org/10.1145/3774904.3792195) `Insert-only`
+1. **STG-DGR: Fraud Detection on Streaming Transaction Graphs with Diffusion-based Generative Replay.** WWW 2026: 742-753 [[paper]](https://doi.org/10.1145/3774904.3792195) `Snapshots`
 
    *Rui Ou, Kun Zhu, Nana Zhang, Jiangtong Li, Chaochao Chen, Changjun Jiang.*
 
