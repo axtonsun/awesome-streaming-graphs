@@ -327,10 +327,6 @@ Each paper entry ends with tags:
 
    *Zhiguo Jiang, Hanhua Chen, Hai Jin.*
 
-1. **Balancing Summarization and Change Detection in Graph Streams.** ICDM 2023: 1025-1030 [[paper]](https://doi.org/10.1109/icdm58522.2023.00118) [[code]](https://github.com/s-fuku/bsc) `Approx` `Snapshots`
-
-   *Shintaro Fukushima, Kenji Yamanishi.*
-
 1. **Graph Stream Sketch: Summarizing Graph Streams With High Speed and Accuracy.** IEEE Trans. Knowl. Data Eng. 35(6): 5901-5914 (2023) [[paper]](https://doi.org/10.1109/TKDE.2022.3174570) `Approx` `Fully dynamic`
 
    *Xiangyang Gou, Lei Zou, Chenxingyu Zhao, Tong Yang.*
@@ -705,10 +701,6 @@ Each paper entry ends with tags:
 
 ### [Triangle Count](#content)
 
-1. **Streaming algorithms for triangle counting: adversarial robustness and the weighted case.** Frontiers Comput. Sci. 20(1): 2001401 (2026) [[paper]](https://doi.org/10.1007/s11704-025-41203-9) `Approx` `Insert-only` `Fully dynamic`
-
-   *Jing Cao, Yicheng Pan, Pan Peng.*
-
 1. **高精度滑动窗口模型下的图流三角形近似计数算法[J].** 软件学报, 2025, 36(9): 4349-4372. [[paper]](https://doi.org/10.13328/j.cnki.jos.007256) [[code]](https://github.com/StreamingTriangle/CBS) `Approx` `Sliding window`
 
    *苟向阳, 邹磊, 于旭.*
@@ -748,10 +740,6 @@ Each paper entry ends with tags:
 1. **Sliding window-based approximate triangle counting with bounded memory usage.** VLDB J. 32(5): 1087-1110 (2023) [[paper]](https://doi.org/10.1007/s00778-023-00783-3) [[code]](https://github.com/StreamingTriangleCounting/TriangleCounting) `Approx` `Sliding window`
 
    *Xiangyang Gou, Lei Zou.*
-
-1. **Top-k heavy weight triangles listing on graph stream.** World Wide Web 26(4): 1827-1851 (2023) [[paper]](https://doi.org/10.1007/s11280-022-01117-z) `Approx` `Insert-only`
-
-   *Fan Zhang, Xiangyang Gou, Lei Zou.*
 
 1. **Distributed Triangle Approximately Counting Algorithms in Simple Graph Stream.** ACM Trans. Knowl. Discov. Data 16(4): 79:1-79:43 (2022) [[paper]](https://doi.org/10.1145/3494562) [[code]](https://github.com/yangx0517/Distributed-triangle-approximately-counting-algorithms-in-simple-graph-stream) `Approx` `Insert-only`
 
@@ -937,6 +925,10 @@ Each paper entry ends with tags:
 
    *Xin Deng, Zheng Qin, Peng Peng, Hui Zhou.*
 
+1. **Top-k heavy weight triangles listing on graph stream.** World Wide Web 26(4): 1827-1851 (2023) [[paper]](https://doi.org/10.1007/s11280-022-01117-z) `Approx` `Insert-only`
+
+   *Fan Zhang, Xiangyang Gou, Lei Zou.*
+
 1. **Efficient maintenance for maximal bicliques in bipartite graph streams.** World Wide Web 25(2): 857-877 (2022) [[paper]](https://doi.org/10.1007/s11280-021-00927-x) `Exact` `Fully dynamic`
 
    *Ziyi Ma, Yuling Liu, Yikun Hu, Jianye Yang, Chubo Liu, Huadong Dai.*
@@ -1001,6 +993,10 @@ Each paper entry ends with tags:
 
    *Ahmet Erdem Sariyüce, Buğra Gedik, Gabriela Jacques-Silva, Kun-Lung Wu, Ümit V. Çatalyürek.*
 
+1. **Efficient Core Maintenance in Large Dynamic Graphs.** IEEE Trans. Knowl. Data Eng. 26(10): 2453-2465 (2014) [[paper]](https://doi.org/10.1109/tkde.2013.158) `Exact` `Fully dynamic`
+
+   *Rong-Hua Li, Jeffrey Xu Yu, Rui Mao.*
+
 1. **Streaming algorithms for k-core decomposition.** Proc. VLDB Endow. 6(6): 433-444 (2013) [[paper]](https://www.vldb.org/pvldb/vol6/p433-sariyuce.pdf) `Exact` `Fully dynamic`
 
    *Ahmet Erdem Sariyüce, Buğra Gedik, Gabriela Jacques-Silva, Kun-Lung Wu, Ümit V. Çatalyürek.*
@@ -1026,6 +1022,10 @@ Each paper entry ends with tags:
 1. **Spade: A Real-Time Fraud Detection Framework on Evolving Graphs.** Proc. VLDB Endow. 16(3): 461-469 (2022) [[paper]](https://www.vldb.org/pvldb/vol16/p461-jiang.pdf) [[code]](https://github.com/samjjx/Spade) `Approx` `Insert-only`
 
    *Jiaxin Jiang, Yuan Li, Bingsheng He, Bryan Hooi, Jia Chen, Johan Kok Zhi Kang.*
+
+1. **Efficient Densest Subgraph Computation in Evolving Graphs.** WWW 2015: 300-310 [[paper]](https://doi.org/10.1145/2736277.2741638) `Approx` `Fully dynamic`
+
+   *Alessandro Epasto, Silvio Lattanzi, Mauro Sozio.*
 
 ### [Community Detection](#content)
 
@@ -1071,6 +1071,10 @@ Each paper entry ends with tags:
 
    *Yifu Tang, Jianxin Li, Nur Al Hasan Haldar, Ziyu Guan, Jiajie Xu, Chengfei Liu.*
 
+1. **Querying k-truss community in large and dynamic graphs.** SIGMOD Conference 2014: 1311-1322 [[paper]](https://doi.org/10.1145/2588555.2610495) `Exact` `Fully dynamic`
+
+   *Xin Huang, Hong Cheng, Lu Qin, Wentao Tian, Jeffrey Xu Yu.*
+
 ### [Graph Clustering](#content)
 
 1. **Efficient processing of streaming graphs for evolution-aware clustering.** CIKM 2013: 319-328 [[paper]](https://doi.org/10.1145/2505515.2505750) `Approx` `Fully dynamic` `Sliding window`
@@ -1115,9 +1119,21 @@ Each paper entry ends with tags:
 
    *Nesreen K. Ahmed, Nick Duffield, Liangzhen Xia.*
 
+1. **Approximate Personalized PageRank on Dynamic Graphs.** KDD 2016: 1315-1324 [[paper]](https://doi.org/10.1145/2939672.2939804) `Approx` `Fully dynamic`
+
+   *Hongyang Zhang, Peter Lofgren, Ashish Goel.*
+
+1. **Efficient PageRank Tracking in Evolving Networks.** KDD 2015: 875-884 [[paper]](https://doi.org/10.1145/2783258.2783297) `Approx` `Fully dynamic`
+
+   *Naoto Ohsaka, Takanori Maehara, Ken-ichi Kawarabayashi.*
+
 1. **Fully dynamic betweenness centrality maintenance on massive networks.** Proc. VLDB Endow. 9(2): 48-59 (2015) [[paper]](https://www.vldb.org/pvldb/vol9/p48-hayashi.pdf) `Approx` `Fully dynamic`
 
    *Takanori Hayashi, Takuya Akiba, Yuichi Yoshida.*
+
+1. **Fast incremental and personalized PageRank.** Proc. VLDB Endow. 4(3): 173-184 (2010) [[paper]](https://www.vldb.org/pvldb/vol4/p173-bahmani.pdf) `Approx` `Fully dynamic`
+
+   *Bahman Bahmani, Abdur Chowdhury, Ashish Goel.*
 
 ## [Anomaly & Event Detection](#content)
 
