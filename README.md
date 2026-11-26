@@ -173,6 +173,10 @@ Each paper entry ends with tags:
 
    *Guanyu Feng, Zixuan Ma, Daixuan Li, Shengqi Chen, Xiaowei Zhu, Wentao Han, Wenguang Chen.*
 
+1. **Terrace: A Hierarchical Graph Container for Skewed Dynamic Graphs.** SIGMOD Conference 2021: 1372-1385 [[paper]](https://doi.org/10.1145/3448016.3457313) `Fully dynamic`
+
+   *Prashant Pandey, Brian Wheatman, Helen Xu, Aydin Buluc.*
+
 1. **Tripoline: generalized incremental graph processing via graph triangle inequality.** EuroSys 2021: 17-32 [[paper]](https://doi.org/10.1145/3447786.3456226) `Insert-only`
 
    *Xiaolin Jiang, Chengshuo Xu, Xizhe Yin, Zhijia Zhao, Rajiv Gupta.*
@@ -605,7 +609,7 @@ Each paper entry ends with tags:
 
    *Xin Chen, You Peng, Sibo Wang, Jeffrey Xu Yu.*
 
-1. **Span-reachability querying in large temporal graphs.** VLDB J. 31(4): 629-647 (2022) [[paper]](https://doi.org/10.1007/s00778-021-00715-z) `Exact` `Fully dynamic`
+1. **Span-reachability querying in large temporal graphs.** VLDB J. 31(4): 629-647 (2022) [[paper]](https://doi.org/10.1007/s00778-021-00715-z) `Exact` `Insert-only` `Sliding window`
 
    *Dong Wen, Bohua Yang, Ying Zhang, Lu Qin, Dawei Cheng, Wenjie Zhang.*
 
@@ -650,6 +654,10 @@ Each paper entry ends with tags:
 1. **Graph Indexing for Shortest-Path Finding over Dynamic Sub-Graphs.** SIGMOD Conference 2016: 1183-1197 [[paper]](https://doi.org/10.1145/2882903.2882933) `Exact` `Fully dynamic`
 
    *Mohamed S. Hassan, Walid G. Aref, Ahmed M. Aly.*
+
+1. **Dynamic and Historical Shortest-Path Distance Queries on Large Evolving Networks by Pruned Landmark Labeling.** WWW 2014: 237-248 [[paper]](https://doi.org/10.1145/2566486.2568007) `Exact` `Insert-only`
+
+   *Takuya Akiba, Yoichi Iwata, Yuichi Yoshida.*
 
 ### [Connectivity](#content)
 
@@ -1077,7 +1085,7 @@ Each paper entry ends with tags:
 
 ### [Graph Clustering](#content)
 
-1. **Efficient processing of streaming graphs for evolution-aware clustering.** CIKM 2013: 319-328 [[paper]](https://doi.org/10.1145/2505515.2505750) `Approx` `Fully dynamic` `Sliding window`
+1. **Efficient processing of streaming graphs for evolution-aware clustering.** CIKM 2013: 319-328 [[paper]](https://doi.org/10.1145/2505515.2505750) `Approx` `Insert-only` `Sliding window`
 
    *Mindi Yuan, Kun-Lung Wu, Gabriela Jacques-Silva, Yi Lu.*
 
@@ -1095,6 +1103,14 @@ Each paper entry ends with tags:
 
    *Jiaming Zhang, Qingjun Xiao, Jun Ma, Liukun He, Qifan Zhang, Guang Cheng.*
 
+1. **Efficient Index Maintenance for Effective Resistance Computation on Evolving Graphs.** Proc. ACM Manag. Data 3(1): 36:1-36:27 (2025) [[paper]](https://doi.org/10.1145/3709686) [[code]](https://github.com/mhliao0516/LEindex) `Approx` `Fully dynamic`
+
+   *Meihao Liao, Cheng Li, Rong-Hua Li, Guoren Wang.*
+
+1. **Real-Time Single-Source Personalized PageRank Over Evolving Social Networks.** ICDE 2025: 3765-3777 [[paper]](https://doi.org/10.1109/icde65448.2025.00281) [[code]](https://github.com/SujunShuai/Work2023) `Approx` `Fully dynamic`
+
+   *Sujun Shuai, Xuan Rao, Lisi Chen, Shuo Shang, Shen Gao.*
+
 1. **Semi-Streaming Algorithms for Hypergraph Matching.** ESA 2025: 79:1-79:19 [[paper]](https://doi.org/10.4230/LIPIcs.ESA.2025.79) [[code]](https://github.com/HeiHGM/Streaming) `Approx` `Insert-only`
 
    *Henrik Reinstädtler, S. M. Ferdous, Alex Pothen, Bora Uçar, Christian Schulz.*
@@ -1106,6 +1122,14 @@ Each paper entry ends with tags:
 1. **Querying Structural Diversity in Streaming Graphs.** Proc. VLDB Endow. 17(5): 1034-1046 (2024) [[paper]](https://www.vldb.org/pvldb/vol17/p1034-wen.pdf) [[code]](https://github.com/kevinChnn/structural-diversity-queries) `Exact` `Insert-only` `Sliding window`
 
    *Kaiyu Chen, Dong Wen, Wenjie Zhang, Ying Zhang, Xiaoyang Wang, Xuemin Lin.*
+
+1. **Everything Evolves in Personalized PageRank.** WWW 2023: 3342-3352 [[paper]](https://doi.org/10.1145/3543507.3583474) [[code]](https://github.com/DongqiFu/EvePPR) `Approx` `Fully dynamic` `Snapshots`
+
+   *Zihao Li, Dongqi Fu, Jingrui He.*
+
+1. **Personalized PageRank on Evolving Graphs with an Incremental Index-Update Scheme.** Proc. ACM Manag. Data 1(1): 25:1-25:26 (2023) [[paper]](https://doi.org/10.1145/3588705) [[code]](https://github.com/lalumine/firm) `Approx` `Fully dynamic`
+
+   *Guanhao Hou, Qintian Guo, Fangyuan Zhang, Sibo Wang, Zhewei Wei.*
 
 1. **Space-efficient random walks on streaming graphs.** Proc. VLDB Endow. 16(2): 356-368 (2022) [[paper]](https://www.vldb.org/pvldb/vol16/p356-papadias.pdf) [[code]](https://github.com/spapadias/wharf) `Exact` `Fully dynamic`
 
